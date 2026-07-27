@@ -19,7 +19,7 @@ jobs:
           python-version: '3.10'
 
       - name: Gerekli Paketleri Yükle
-        run: pip install -r requirements.txt
+        run:  pip install requests beautifulsoup4
 
       - name: Botu Çalıştır
         env:
