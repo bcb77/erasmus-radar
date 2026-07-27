@@ -2,25 +2,36 @@ import streamlit as st
 import json
 import os
 
-# Sayfa ayarları (Koyu tema için hazır yapı)
+# Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# Özel CSS ile arka planı siber/koyu tema konseptine çeviriyoruz
+# Özel CSS: Dünya haritası arka planı, yarı saydam kutular ve belirgin proje başlıkları
 st.markdown(
     """
     <style>
-    /* Ana arkaplanı şık bir koyu gri/lacivert tona boyuyoruz */
     .stApp {
-        background-color: #0b0f19;
-        color: #f3f4f6;
+        background-image: linear-gradient(rgba(11, 15, 25, 0.90), rgba(11, 15, 25, 0.90)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
-    /* Proje kartlarının arka planını hafif belirginleştiriyoruz */
+    
+    /* Proje kutularını şık ve yarı saydam yapıyoruz */
     div.stContainer {
-        background-color: #111827;
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #1f2937;
-        margin-bottom: 15px;
+        background-color: rgba(17, 24, 39, 0.85);
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid rgba(56, 189, 248, 0.2);
+        margin-bottom: 18px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Proje başlıklarını çok daha belirgin ve dikkat çekici yapıyoruz */
+    div.stContainer h3 {
+        color: #38bdf8 !important;
+        font-weight: 700 !important;
+        font-size: 1.25rem !important;
     }
     </style>
     """,
