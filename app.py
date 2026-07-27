@@ -5,33 +5,43 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# Özel CSS: Dünya haritası arka planı, yarı saydam kutular ve belirgin proje başlıkları
+# CSS: Yazıları bembeyaz yapıyoruz ve arka plan karartmasını optimize ediyoruz
 st.markdown(
     """
     <style>
+    /* Arka plan görseli ve karartması */
     .stApp {
-        background-image: linear-gradient(rgba(11, 15, 25, 0.90), rgba(11, 15, 25, 0.90)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
+        background-image: linear-gradient(rgba(5, 8, 15, 0.93), rgba(5, 8, 15, 0.93)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
     
-    /* Proje kutularını şık ve yarı saydam yapıyoruz */
-    div.stContainer {
-        background-color: rgba(17, 24, 39, 0.85);
-        padding: 22px;
-        border-radius: 12px;
-        border: 1px solid rgba(56, 189, 248, 0.2);
-        margin-bottom: 18px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Ana başlık ve metinlerin rengini tamamen beyaz yapıyoruz */
+    h1, h2, h3, p, span, label {
+        color: #ffffff !important;
     }
 
-    /* Proje başlıklarını çok daha belirgin ve dikkat çekici yapıyoruz */
+    /* Proje kutularını daha belirgin ve şık bir cam efektine dönüştürüyoruz */
+    div.stContainer {
+        background-color: rgba(17, 24, 39, 0.90);
+        padding: 22px;
+        border-radius: 12px;
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        margin-bottom: 18px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Proje başlıkları (parlak mavi tonuyla dikkat çekici) */
     div.stContainer h3 {
         color: #38bdf8 !important;
         font-weight: 700 !important;
-        font-size: 1.25rem !important;
+    }
+    
+    /* Platform ve küçük yazılar */
+    div.stContainer p {
+        color: #e2e8f0 !important;
     }
     </style>
     """,
