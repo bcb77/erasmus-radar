@@ -1,0 +1,28 @@
+name: Erasmus Botunu Calistir
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
+  workflow_dispatch: # Bu sayede butona basıp manuel de çalıştırabiliriz
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Kodu Klonla
+        uses: actions/checkout@v3
+
+      - name: Python Kur
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Gerekli Paketleri Yükle
+        run: pip install -r requirements.txt
+
+      - name: Botu Çalıştır
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python bot.py
