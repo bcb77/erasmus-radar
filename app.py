@@ -1,48 +1,35 @@
 import streamlit as st
+import json
+import os
 
-# Sayfa Ayarları
-st.set_page_config(page_title="Erasmus Radar", layout="wide", page_icon="🌍")
+# Sayfa ayarları
+st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-st.title("🌍 Erasmus ve ESC Proje Radarı")
-st.write("Türkiye'den başvuruya açık güncel projeler listesi.")
+st.title("🌍 Erasmus & ESC Proje Radarı")
+st.markdown("Botumuzun internetteki platformlardan senin için otomatik olarak topladığı en güncel fiziksel projeler aşağıda listelenmiştir.")
+st.divider()
 
-# Veriler (Saf sözlük yapısı - Pandas'a gerek yok!)
-data = [
-    {"Proje Adı": "United in Diversity", "Tür": "Gençlik Değişimi", "Ülke": "Türkiye", "Şehir": "Antalya", "Süre": "Tarihler Netleşecek"},
-    {"Proje Adı": "Yeşil Dönüşüm Elçileri", "Tür": "Kısa Dönem ESC", "Ülke": "İspanya", "Şehir": "Madrid", "Süre": "2 Ay"},
-    {"Proje Adı": "Dijital Gençlik Atölyesi", "Tür": "Gençlik Değişimi", "Ülke": "Almanya", "Şehir": "Berlin", "Süre": "10 Gün"},
-    {"Proje Adı": "İklim ve Gelecek", "Tür": "Gençlik Değişimi", "Ülke": "İtalya", "Şehir": "Roma", "Süre": "14 Gün"},
-    {"Proje Adı": "Kültürlerarası Köprü", "Tür": "Kısa Dönem ESC", "Ülke": "Polonya", "Şehir": "Varşova", "Süre": "1 Ay"},
-    {"Proje Adı": "Sürdürülebilir Adımlar", "Tür": "Uzun Dönem ESC", "Ülke": "İspanya", "Şehir": "Barselona", "Süre": "10 Ay"},
-    {"Proje Adı": "Green Transformation in Action", "Tür": "Kısa Dönem ESC", "Ülke": "Almanya", "Şehir": "Bremen", "Süre": "2 Ay"},
-    {"Proje Adı": "Eco-Citizenship & Media", "Tür": "Gençlik Değişimi", "Ülke": "İtalya", "Şehir": "Napoli", "Süre": "14 Gün"},
-    {"Proje Adı": "Youth for Cultural Diplomacy", "Tür": "Gençlik Değişimi", "Ülke": "İspanya", "Şehir": "Valensiya", "Süre": "10 Gün"},
-]  
+VERITABANI = "projeler.json"
 
-col1, col2 = st.columns(2)
-
-with col1:
-    secilen_tur = st.selectbox("Proje Türü Seçin", ["Tümü", "Kısa Dönem ESC", "Gençlik Değişimi", "Uzun Dönem ESC"])
-with col2:
-    # Ülkeleri manuel veriyoruz, çökmeye mahal yok
-    ulkeler = ["Tümü", "İspanya", "Almanya", "İtalya", "Polonya", "Türkiye"]
-    secilen_ulke = st.selectbox("Hedef Ülke", ulkeler)
-
-st.markdown("---")
-
-if st.button("Projeleri Getir"):
-    with st.spinner('Senin için ilanlar filtreleniyor...'):
-        
-        # Filtreleme Mantığı (Saf Python - Işık hızında çalışır)
-        filtered_data = [
-            row for row in data 
-            if (secilen_tur == "Tümü" or row["Tür"] == secilen_tur) and 
-               (secilen_ulke == "Tümü" or row["Ülke"] == secilen_ulke)
-        ]
-
-        # Sonuçları Gösterme
-        if not filtered_data:
-            st.warning("Bu kriterlere uygun proje bulunamadı. Başka bir filtre dene!")
-        else:
-            st.success(f"Tam sana göre {len(filtered_data)} proje bulundu!")
-            st.dataframe(filtered_data, use_container_width=True)
+# Veritabanını okuyup ekrana yansıtma işlemi
+if os.path.exists(VERITABANI):
+    with open(VERITABANI, "r", encoding="utf-8") as f:
+        try:
+            projeler = json.load(f)
+            
+            if not projeler:
+                st.info("Şu an için sistemde kayıtlı yeni bir proje bulunmuyor.")
+            else:
+                for proje in projeler:
+                    # Her proje için şık bir çerçeve oluşturuyoruz
+                    with st.container():
+                        st.subheader(f"📌 {proje['baslik']}")
+                        st.caption(f"**Platform:** {proje['platform']}")
+                        
+                        # Tıklanabilir başvuru butonu
+                        st.link_button("Hemen Başvur / İncele", proje['link'])
+                        st.markdown("---")
+        except:
+            st.error("Veriler okunurken bir hata oluştu. Veritabanı formatı bozuk olabilir.")
+else:
+    st.warning("Henüz hiç proje toplanmadı. Bot ilk taramasını yaptıktan sonra ilanlar burada görünecektir.")
