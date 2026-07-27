@@ -21,9 +21,12 @@ def hafizaya_yaz(link):
 def avci_bot():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     eski_linkler = hafizayi_oku()
-    yeni_ilanlar = []
     
-    # 1. HEDEF: SALTO
+    salto_ilanlar = []
+    eplus_ilanlar = []
+    e_plus_durum_mesaji = ""
+    
+    # --- 1. HEDEF: SALTO ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
@@ -32,51 +35,50 @@ def avci_bot():
                 if "/tools/european-training-calendar/training/" in a["href"]:
                     baslik = a.text.strip()
                     tam_link = "https://www.salto-youth.net" + a["href"]
-                    baslik_kucuk = baslik.lower()
-                    if "online" in baslik_kucuk or "virtual" in baslik_kucuk or "e-learning" in baslik_kucuk: continue 
-                    if baslik and tam_link not in eski_linkler:
-                        if tam_link not in [i["link"] for i in yeni_ilanlar]:
-                            yeni_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
+                    if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
+                    
+                    if baslik and tam_link not in eski_linkler and tam_link not in [i["link"] for i in salto_ilanlar]:
+                        salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception: pass
 
-    # 2. HEDEF: E+ TÜRKİYE (Teşhis Modu)
-    e_plus_durum_mesaji = ""
+    # --- 2. HEDEF: E+ TÜRKİYE ---
     try:
-        eplus_url = "https://www.eplusturkiye.org/projeler/"
-        res_eplus = requests.get(eplus_url, headers=headers)
-        
+        res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers)
         if res_eplus.status_code != 200:
-            e_plus_durum_mesaji = f"E+ Türkiye siteye almadı! Durum Kodu: {res_eplus.status_code}"
+            e_plus_durum_mesaji = f"Site erişimi reddetti. (Durum Kodu: {res_eplus.status_code})"
         else:
             soup_eplus = BeautifulSoup(res_eplus.content, "html.parser")
-            link_sayisi = 0
             
             for a in soup_eplus.find_all("a", href=True):
                 href = a["href"]
                 baslik = a.text.strip()
-                if len(baslik) > 15 and href != "#" and not href.startswith("mailto:"):
-                    link_sayisi += 1
-                    tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
-                    if tam_link not in eski_linkler:
-                        if tam_link not in [i["link"] for i in yeni_ilanlar]:
-                            yeni_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
-            
-            # Eğer siteye girip hiç proje linki bulamadıysa bize haber verecek
-            if link_sayisi == 0:
-                e_plus_durum_mesaji = "E+ Türkiye sitesine girildi (Kod: 200) ama sayfadaki HTML yapısı okunmuyor, linkler farklı bir formata gizlenmiş."
                 
+                # Sitedeki KVKK, İletişim gibi alakasız uzun linkleri eliyoruz
+                yasakli_kelimeler = ["kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika"]
+                gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
+                
+                if len(baslik) > 15 and not gereksiz_mi and href != "#" and not href.startswith("mailto:"):
+                    tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
+                    if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
+                        eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
+                        
+            if not eplus_ilanlar:
+                e_plus_durum_mesaji = "Siteye girildi ama şu an aktif bir proje linki yok."
     except Exception as e:
-        e_plus_durum_mesaji = f"E+ Türkiye Tarama Hatası: {e}"
+        e_plus_durum_mesaji = f"Tarama Hatası: {e}"
 
-    # SONUÇLARI GÖNDER
-    for ilan in yeni_ilanlar[:5]:
+    # --- GÖNDERİM VE HAFIZA KAYDI ---
+    # Her siteden maksimum 3'er tane proje alsın ki birbirlerinin hakkını yemesinler
+    gonderilecekler = salto_ilanlar[:3] + eplus_ilanlar[:3]
+    
+    for ilan in gonderilecekler:
         mesaj = f"🚨 <b>YEPYENİ BİR PROJE YAYINLANDI!</b>\n\n📌 <b>{ilan['baslik']}</b>\n\n🌍 <b>Platform:</b> {ilan['platform']}\n\n🔗 <b>İncele:</b>\n{ilan['link']}"
         mesaj_gonder(mesaj)
         hafizaya_yaz(ilan['link'])
         
-    # E+ Türkiye'de bir sorun varsa bize sadece bir uyarı mesajı atsın
-    if e_plus_durum_mesaji:
-        mesaj_gonder(f"⚠️ <b>TEŞHİS RAPORU:</b>\n{e_plus_durum_mesaji}")
+    # E+ Türkiye'den proje gelmediyse gerçek teşhisi şimdi atacak
+    if e_plus_durum_mesaji and not eplus_ilanlar:
+        mesaj_gonder(f"⚠️ <b>E+ TÜRKİYE TEŞHİS RAPORU:</b>\n{e_plus_durum_mesaji}")
 
 if __name__ == "__main__":
     avci_bot()
