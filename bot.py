@@ -19,9 +19,15 @@ def hafizaya_yaz(link):
     with open(HAFIZA_DOSYASI, "a", encoding="utf-8") as f: f.write(link + "\n")
 
 def avci_bot():
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-    eski_linkler = hafizayi_oku()
+    # --- YENİ KİMLİK KARTI ---
+    # Artık siteye sadece "Ben Chrome'um" demiyoruz, ne istediğimizi ve dilimizi de söylüyoruz.
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+    }
     
+    eski_linkler = hafizayi_oku()
     salto_ilanlar = []
     eplus_ilanlar = []
     e_plus_durum_mesaji = ""
@@ -53,7 +59,6 @@ def avci_bot():
                 href = a["href"]
                 baslik = a.text.strip()
                 
-                # Sitedeki KVKK, İletişim gibi alakasız uzun linkleri eliyoruz
                 yasakli_kelimeler = ["kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika"]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
@@ -63,12 +68,11 @@ def avci_bot():
                         eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
                         
             if not eplus_ilanlar:
-                e_plus_durum_mesaji = "Siteye girildi ama şu an aktif bir proje linki yok."
+                e_plus_durum_mesaji = "Siteye başarıyla sızıldı (Kod 200) ama şu an aktif bir proje linki yok."
     except Exception as e:
         e_plus_durum_mesaji = f"Tarama Hatası: {e}"
 
     # --- GÖNDERİM VE HAFIZA KAYDI ---
-    # Her siteden maksimum 3'er tane proje alsın ki birbirlerinin hakkını yemesinler
     gonderilecekler = salto_ilanlar[:3] + eplus_ilanlar[:3]
     
     for ilan in gonderilecekler:
@@ -76,7 +80,6 @@ def avci_bot():
         mesaj_gonder(mesaj)
         hafizaya_yaz(ilan['link'])
         
-    # E+ Türkiye'den proje gelmediyse gerçek teşhisi şimdi atacak
     if e_plus_durum_mesaji and not eplus_ilanlar:
         mesaj_gonder(f"⚠️ <b>E+ TÜRKİYE TEŞHİS RAPORU:</b>\n{e_plus_durum_mesaji}")
 
