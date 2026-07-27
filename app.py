@@ -5,7 +5,7 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Butonları canlı maviye boyayan, yazıları netleştiren tasarım
+# CSS: Arka plan, cam efektli kutular ve genel metin ayarları
 st.markdown(
     """
     <style>
@@ -23,7 +23,7 @@ st.markdown(
         color: #ffffff !important;
     }
 
-    /* Proje kutularını daha belirgin ve şık bir cam efektine dönüştürüyoruz */
+    /* Proje kutularını cam efektli yapıyoruz */
     div.stContainer {
         background-color: rgba(17, 24, 39, 0.90);
         padding: 22px;
@@ -33,7 +33,7 @@ st.markdown(
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
-    /* Proje başlıkları (parlak mavi tonuyla dikkat çekici) */
+    /* Proje başlıkları (parlak mavi tonu) */
     div.stContainer h3 {
         color: #38bdf8 !important;
         font-weight: 700 !important;
@@ -42,18 +42,6 @@ st.markdown(
     /* Platform ve küçük yazılar */
     div.stContainer p {
         color: #e2e8f0 !important;
-    }
-
-    /* Hemen Başvur butonunu canlı mavi renk ve net beyaz yazıyla belirginleştiriyoruz */
-    div.stContainer a {
-        background-color: #2563eb !important;
-        color: #ffffff !important;
-        border-radius: 8px !important;
-        font-weight: 600 !important;
-        text-decoration: none !important;
-    }
-    div.stContainer a:hover {
-        background-color: #1d4ed8 !important;
     }
     </style>
     """,
@@ -73,15 +61,31 @@ if os.path.exists(VERITABANI):
             projeler = json.load(f)
             
             if not projeler:
-                st.info("Şu an için sistemde kayıtlı yeni bir proje bulunmuyor.")
+                st.info("Şu an için sistemde kayıtlı yeni bir proje bulun\nuyor.")
             else:
                 for proje in projeler:
                     with st.container():
                         st.subheader(f"📌 {proje['baslik']}")
                         st.caption(f"**Platform:** {proje['platform']}")
                         
-                        # Tıklanabilir başvuru butonu
-                        st.link_button("Hemen Başvur / İncele", proje['link'])
+                        # %100 garantili, canlı mavi renkli ve beyaz yazılı özel HTML buton
+                        st.markdown(
+                            f'''
+                            <div style="margin-top: 12px;">
+                                <a href="{proje['link']}" target="_blank" style="
+                                    background-color: #2563eb; 
+                                    color: #ffffff !important; 
+                                    padding: 10px 20px; 
+                                    border-radius: 8px; 
+                                    font-weight: 600; 
+                                    text-decoration: none; 
+                                    display: inline-block;
+                                    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                                ">🚀 Hemen Başvur / İncele</a>
+                            </div>
+                            ''',
+                            unsafe_allow_html=True
+                        )
         except:
             st.error("Veriler okunurken bir hata oluştu. Veritabanı formatı bozuk olabilir.")
 else:
