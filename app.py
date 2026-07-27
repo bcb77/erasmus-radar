@@ -5,7 +5,7 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Arka plan, cam efektli kutular ve genel metin ayarları
+# CSS: Animasyonlu native butonları ve yazıları kusursuz hale getiren stil
 st.markdown(
     """
     <style>
@@ -18,7 +18,7 @@ st.markdown(
         background-attachment: fixed;
     }
     
-    /* Ana başlık ve metinlerin rengini tamamen beyaz yapıyoruz */
+    /* Ana başlık ve genel metinlerin rengini beyaz yapıyoruz */
     h1, h2, h3, p, span, label {
         color: #ffffff !important;
     }
@@ -43,6 +43,22 @@ st.markdown(
     div.stContainer p {
         color: #e2e8f0 !important;
     }
+
+    /* Streamlit'in kendi animasyonlu link butonlarını özelleştiriyoruz */
+    .stLinkButton a {
+        background-color: #2563eb !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        border: none !important;
+    }
+    .stLinkButton a:hover {
+        background-color: #1d4ed8 !important;
+        color: #ffffff !important;
+    }
+    .stLinkButton a p {
+        color: #ffffff !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
@@ -61,31 +77,15 @@ if os.path.exists(VERITABANI):
             projeler = json.load(f)
             
             if not projeler:
-                st.info("Şu an için sistemde kayıtlı yeni bir proje bulun\nuyor.")
+                st.info("Şu an için sistemde kayıtlı yeni bir proje bulunmuyor.")
             else:
                 for proje in projeler:
                     with st.container():
                         st.subheader(f"📌 {proje['baslik']}")
                         st.caption(f"**Platform:** {proje['platform']}")
                         
-                        # %100 garantili, canlı mavi renkli ve beyaz yazılı özel HTML buton
-                        st.markdown(
-                            f'''
-                            <div style="margin-top: 12px;">
-                                <a href="{proje['link']}" target="_blank" style="
-                                    background-color: #2563eb; 
-                                    color: #ffffff !important; 
-                                    padding: 10px 20px; 
-                                    border-radius: 8px; 
-                                    font-weight: 600; 
-                                    text-decoration: none; 
-                                    display: inline-block;
-                                    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-                                ">🚀 Hemen Başvur / İncele</a>
-                            </div>
-                            ''',
-                            unsafe_allow_html=True
-                        )
+                        # Animasyonlu orijinal Streamlit buton (yazıları artık bembeyaz ve net)
+                        st.link_button("Hemen Başvur / İncele", proje['link'])
         except:
             st.error("Veriler okunurken bir hata oluştu. Veritabanı formatı bozuk olabilir.")
 else:
