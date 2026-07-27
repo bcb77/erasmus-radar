@@ -8,12 +8,13 @@ st.write("Türkiye'den başvuruya açık güncel projeler listesi.")
 
 # Veriler (Saf sözlük yapısı - Pandas'a gerek yok!)
 data = [
+    {"Proje Adı": "United in Diversity", "Tür": "Gençlik Değişimi", "Ülke": "Türkiye", "Şehir": "Antalya", "Süre": "Tarihler Netleşecek"},
     {"Proje Adı": "Yeşil Dönüşüm Elçileri", "Tür": "Kısa Dönem ESC", "Ülke": "İspanya", "Şehir": "Madrid", "Süre": "2 Ay"},
     {"Proje Adı": "Dijital Gençlik Atölyesi", "Tür": "Gençlik Değişimi", "Ülke": "Almanya", "Şehir": "Berlin", "Süre": "10 Gün"},
     {"Proje Adı": "İklim ve Gelecek", "Tür": "Gençlik Değişimi", "Ülke": "İtalya", "Şehir": "Roma", "Süre": "14 Gün"},
     {"Proje Adı": "Kültürlerarası Köprü", "Tür": "Kısa Dönem ESC", "Ülke": "Polonya", "Şehir": "Varşova", "Süre": "1 Ay"},
     {"Proje Adı": "Sürdürülebilir Adımlar", "Tür": "Uzun Dönem ESC", "Ülke": "İspanya", "Şehir": "Barselona", "Süre": "10 Ay"}
-]
+]  
 
 col1, col2 = st.columns(2)
 
@@ -21,7 +22,7 @@ with col1:
     secilen_tur = st.selectbox("Proje Türü Seçin", ["Tümü", "Kısa Dönem ESC", "Gençlik Değişimi", "Uzun Dönem ESC"])
 with col2:
     # Ülkeleri manuel veriyoruz, çökmeye mahal yok
-    ulkeler = ["Tümü", "İspanya", "Almanya", "İtalya", "Polonya"]
+    ulkeler = ["Tümü", "İspanya", "Almanya", "İtalya", "Polonya, Türkiye"]
     secilen_ulke = st.selectbox("Hedef Ülke", ulkeler)
 
 st.markdown("---")
