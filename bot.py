@@ -2,6 +2,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import json
+from datetime import datetime
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -42,7 +43,7 @@ def avci_bot():
     salto_ilanlar = []
     eplus_ilanlar = []
     
-    # --- 1. HEDEF: SALTO ---
+    # --- 1. HEDEF: SALTO (Fiziksel ve Süresi Geçmemiş) ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
@@ -51,12 +52,14 @@ def avci_bot():
                 if "/tools/european-training-calendar/training/" in a["href"]:
                     baslik = a.text.strip()
                     tam_link = "https://www.salto-youth.net" + a["href"]
+                    
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
+                    
                     if baslik and tam_link not in eski_linkler and tam_link not in [i["link"] for i in salto_ilanlar]:
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception: pass
 
-    # --- 2. HEDEF: E+ TÜRKİYE (Aşılmaz Duvar Filtresi) ---
+    # --- 2. HEDEF: E+ TÜRKİYE (Filtreli ve Güncel) ---
     try:
         res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers)
         if res_eplus.status_code == 200:
@@ -65,7 +68,6 @@ def avci_bot():
                 href = a["href"]
                 baslik = a.text.strip()
                 
-                # Kara Liste'yi devasa boyuta çıkardık: Sitenin tüm sekmelerini çöpe atıyoruz!
                 yasakli_kelimeler = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "work and travel", "geçmiş", "vizyon", "misyon", "sss", "sorular",
@@ -73,8 +75,7 @@ def avci_bot():
                 ]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
-                # KURAL 1: Başlık 30 karakterden uzun olmalı! (Projeler hep uzun cümlelerdir, sekmeler kısa)
-                # KURAL 2: Linkin içinde en az 2 tane tire (-) olmalı! (Gerçek projelerin URL'leri genelde "ispanya-madrid-gonulluluk" gibi tirelidir)
+                # Başlık 30 karakterden uzun, tire içeren ve yasaklı kelime içermeyen gerçek projeler
                 if len(baslik) > 30 and not gereksiz_mi and href.count("-") >= 2 and href != "#" and not href.startswith("mailto:"):
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
