@@ -5,7 +5,7 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Yazıları bembeyaz yapıyoruz ve arka plan karartmasını optimize ediyoruz
+# CSS: Butonları canlı maviye boyayan, yazıları netleştiren tasarım
 st.markdown(
     """
     <style>
@@ -42,6 +42,18 @@ st.markdown(
     /* Platform ve küçük yazılar */
     div.stContainer p {
         color: #e2e8f0 !important;
+    }
+
+    /* Hemen Başvur butonunu canlı mavi renk ve net beyaz yazıyla belirginleştiriyoruz */
+    div.stContainer a {
+        background-color: #2563eb !important;
+        color: #ffffff !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+    }
+    div.stContainer a:hover {
+        background-color: #1d4ed8 !important;
     }
     </style>
     """,
