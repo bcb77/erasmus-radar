@@ -5,13 +5,13 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Animasyonlu native butonları ve yazıları kusursuz hale getiren stil
+# CSS: Haritanın daha belirgin olması için karartmayı azalttık
 st.markdown(
     """
     <style>
-    /* Arka plan görseli ve karartması */
+    /* Arka plan haritası daha belirgin (karartma oranı 0.75'e düşürüldü) */
     .stApp {
-        background-image: linear-gradient(rgba(5, 8, 15, 0.93), rgba(5, 8, 15, 0.93)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
+        background-image: linear-gradient(rgba(5, 8, 15, 0.75), rgba(5, 8, 15, 0.75)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -25,7 +25,7 @@ st.markdown(
 
     /* Proje kutularını cam efektli yapıyoruz */
     div.stContainer {
-        background-color: rgba(17, 24, 39, 0.90);
+        background-color: rgba(17, 24, 39, 0.88);
         padding: 22px;
         border-radius: 12px;
         border: 1px solid rgba(56, 189, 248, 0.4);
@@ -44,7 +44,7 @@ st.markdown(
         color: #e2e8f0 !important;
     }
 
-    /* Streamlit'in kendi animasyonlu link butonlarını özelleştiriyoruz */
+    /* Animasyonlu orijinal Streamlit buton ayarları */
     .stLinkButton a {
         background-color: #2563eb !important;
         color: #ffffff !important;
@@ -84,7 +84,7 @@ if os.path.exists(VERITABANI):
                         st.subheader(f"📌 {proje['baslik']}")
                         st.caption(f"**Platform:** {proje['platform']}")
                         
-                        # Animasyonlu orijinal Streamlit buton (yazıları artık bembeyaz ve net)
+                        # Animasyonlu orijinal Streamlit buton
                         st.link_button("Hemen Başvur / İncele", proje['link'])
         except:
             st.error("Veriler okunurken bir hata oluştu. Veritabanı formatı bozuk olabilir.")
