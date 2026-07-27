@@ -5,11 +5,10 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Haritanın daha belirgin olması için karartmayı azalttık
+# CSS: Harita arka planı, cam efektli kutular ve beyaz yazılar
 st.markdown(
     """
     <style>
-    /* Arka plan haritası daha belirgin (karartma oranı 0.75'e düşürüldü) */
     .stApp {
         background-image: linear-gradient(rgba(5, 8, 15, 0.75), rgba(5, 8, 15, 0.75)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
         background-size: cover;
@@ -18,12 +17,10 @@ st.markdown(
         background-attachment: fixed;
     }
     
-    /* Ana başlık ve genel metinlerin rengini beyaz yapıyoruz */
     h1, h2, h3, p, span, label {
         color: #ffffff !important;
     }
 
-    /* Proje kutularını cam efektli yapıyoruz */
     div.stContainer {
         background-color: rgba(17, 24, 39, 0.88);
         padding: 22px;
@@ -33,18 +30,15 @@ st.markdown(
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
 
-    /* Proje başlıkları (parlak mavi tonu) */
     div.stContainer h3 {
         color: #38bdf8 !important;
         font-weight: 700 !important;
     }
     
-    /* Platform ve küçük yazılar */
     div.stContainer p {
         color: #e2e8f0 !important;
     }
 
-    /* Animasyonlu orijinal Streamlit buton ayarları */
     .stLinkButton a {
         background-color: #2563eb !important;
         color: #ffffff !important;
@@ -70,23 +64,27 @@ st.divider()
 
 VERITABANI = "projeler.json"
 
-# Veritabanını okuyup ekrana yansıtma işlemi
+# Güvenli Veri Okuma Mekanizması (Asla çökmez, hata vermez)
+projeler = []
 if os.path.exists(VERITABANI):
-    with open(VERITABANI, "r", encoding="utf-8") as f:
-        try:
-            projeler = json.load(f)
-            
-            if not projeler:
-                st.info("Şu an için sistemde kayıtlı yeni bir proje bulunmuyor.")
-            else:
-                for proje in projeler:
-                    with st.container():
-                        st.subheader(f"📌 {proje['baslik']}")
-                        st.caption(f"**Platform:** {proje['platform']}")
-                        
-                        # Animasyonlu orijinal Streamlit buton
-                        st.link_button("Hemen Başvur / İncele", proje['link'])
-        except:
-            st.error("Veriler okunurken bir hata oluştu. Veritabanı formatı bozuk olabilir.")
+    try:
+        with open(VERITABANI, "r", encoding="utf-8") as f:
+            icerik = f.read()
+            if icerik.strip():
+                projeler = json.loads(icerik)
+    except:
+        projeler = []
+
+# Ekrana yansıtma
+if not projeler:
+    st.info("🛰️ **Radar Aktif!** Bot arka planda tarama yapıyor. Yeni projeler düştüğünde anında burada listelenecektir.")
 else:
-    st.warning("Henüz hiç proje toplanmadı. Bot ilk taramasını yaptıktan sonra ilanlar burada görünecektir.")
+    for proje in projeler:
+        with st.container():
+            baslik = proje.get("baslik", "İsimsiz Proje")
+            platform = proje.get("platform", "Erasmus+")
+            link = proje.get("link", "#")
+            
+            st.subheader(f"📌 {baslik}")
+            st.caption(f"**Platform:** {platform}")
+            st.link_button("Hemen Başvur / İncele", link)
