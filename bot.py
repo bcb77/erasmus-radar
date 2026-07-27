@@ -2,7 +2,6 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import json
-from datetime import datetime
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
@@ -22,6 +21,7 @@ def hafizaya_yaz(link):
     with open(HAFIZA_DOSYASI, "a", encoding="utf-8") as f: f.write(link + "\n")
 
 def veritabanini_guncelle(yeni_ilanlar):
+    """Bulunan projeleri Streamlit sitesinin okuması için JSON olarak kaydeder."""
     mevcut_projeler = []
     if os.path.exists(VERITABANI):
         with open(VERITABANI, "r", encoding="utf-8") as f:
@@ -43,7 +43,7 @@ def avci_bot():
     salto_ilanlar = []
     eplus_ilanlar = []
     
-    # --- 1. HEDEF: SALTO (Fiziksel ve Süresi Geçmemiş) ---
+    # --- 1. HEDEF: SALTO (Fiziksel Filtreli) ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
@@ -59,7 +59,7 @@ def avci_bot():
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception: pass
 
-    # --- 2. HEDEF: E+ TÜRKİYE (Filtreli ve Güncel) ---
+    # --- 2. HEDEF: E+ TÜRKİYE (Sıkı Filtreli ve Menü Ayıklayıcılı) ---
     try:
         res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers)
         if res_eplus.status_code == 200:
@@ -68,6 +68,7 @@ def avci_bot():
                 href = a["href"]
                 baslik = a.text.strip()
                 
+                # Sitenin menü sekmelerini ve çöpleri eleyen kara liste
                 yasakli_kelimeler = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "work and travel", "geçmiş", "vizyon", "misyon", "sss", "sorular",
@@ -75,7 +76,7 @@ def avci_bot():
                 ]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
-                # Başlık 30 karakterden uzun, tire içeren ve yasaklı kelime içermeyen gerçek projeler
+                # Başlık 30 karakterden uzun, içinde en az 2 tire (-) olan ve menü olmayan gerçek projeler
                 if len(baslik) > 30 and not gereksiz_mi and href.count("-") >= 2 and href != "#" and not href.startswith("mailto:"):
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
@@ -91,6 +92,7 @@ def avci_bot():
             mesaj_gonder(mesaj)
             hafizaya_yaz(ilan['link'])
             
+        # Hem Telegram'a atar hem de sitenin okuyacağı arşivi günceller
         veritabanini_guncelle(gonderilecekler)
 
 if __name__ == "__main__":
