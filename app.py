@@ -13,7 +13,7 @@ data = [
     {"Proje Adı": "Dijital Gençlik Atölyesi", "Tür": "Gençlik Değişimi", "Ülke": "Almanya", "Şehir": "Berlin", "Süre": "10 Gün"},
     {"Proje Adı": "İklim ve Gelecek", "Tür": "Gençlik Değişimi", "Ülke": "İtalya", "Şehir": "Roma", "Süre": "14 Gün"},
     {"Proje Adı": "Kültürlerarası Köprü", "Tür": "Kısa Dönem ESC", "Ülke": "Polonya", "Şehir": "Varşova", "Süre": "1 Ay"},
-    {"Proje Adı": "Sürdürülebilir Adımlar", "Tür": "Uzun Dönem ESC", "Ülke": "İspanya", "Şehir": "Barselona", "Süre": "10 Ay"}
+    {"Proje Adı": "Sürdürülebilir Adımlar", "Tür": "Uzun Dönem ESC", "Ülke": "İspanya", "Şehir": "Barselona", "Süre": "10 Ay"},
     {"Proje Adı": "Green Transformation in Action", "Tür": "Kısa Dönem ESC", "Ülke": "Almanya", "Şehir": "Bremen", "Süre": "2 Ay"},
     {"Proje Adı": "Eco-Citizenship & Media", "Tür": "Gençlik Değişimi", "Ülke": "İtalya", "Şehir": "Napoli", "Süre": "14 Gün"},
     {"Proje Adı": "Youth for Cultural Diplomacy", "Tür": "Gençlik Değişimi", "Ülke": "İspanya", "Şehir": "Valensiya", "Süre": "10 Gün"},
