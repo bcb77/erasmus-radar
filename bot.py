@@ -21,34 +21,36 @@ def avci_bot():
     
     try:
         response = requests.get(url, headers=headers)
-        
-        # 1. Kontrol: Site bizi kapıdan çevirdi mi?
         if response.status_code != 200:
-            mesaj_gonder(f"⚠️ <b>SALTO SİTESİ ERİŞİMİ REDDETTİ</b>\nDurum Kodu: {response.status_code}")
             return
             
         soup = BeautifulSoup(response.content, "html.parser")
-        projeler = soup.find_all("div", class_="training-course") 
         
-        # 2. Kontrol: Siteye girdik ama projelerin yerini bulamadık mı?
-        if not projeler:
-            site_basligi = soup.title.text if soup.title else "Başlık Bulunamadı"
-            mesaj_gonder(f"✅ <b>BOT HEDEFE SIZDI AMA İLAN BULAMADI</b>\n\nSite Başlığı: <i>{site_basligi}</i>\n\nDurum: SALTO sayfasının tasarımı değişmiş olabilir, etiketleri bulamıyorum.")
-            return
-
-        # 3. Kontrol: İlanlar bulunduysa gönder!
-        for proje in projeler[:3]: 
-            baslik_etiketi = proje.find("h3")
-            if not baslik_etiketi:
-                continue
-                
-            baslik = baslik_etiketi.text.strip()
-            link_etiketi = proje.find("a")
-            link = "https://www.salto-youth.net" + link_etiketi["href"] if link_etiketi else url
+        # Sitedeki TÜM linkleri topluyoruz
+        tum_linkler = soup.find_all("a", href=True)
+        bulunan_ilanlar = []
+        
+        # Linklerin içinden sadece "eğitim ilanı" olanları cımbızlıyoruz
+        for a_etiketi in tum_linkler:
+            href = a_etiketi["href"]
             
-            mesaj = f"🚨 <b>RADARA YENİ PROJE TAKILDI!</b>\n\n📌 <b>{baslik}</b>\n\n🌍 <b>Lokasyon:</b> Avrupa / Çevrimiçi\n\n🔗 <a href='{link}'>Detaylar İçin Tıkla</a>"
-            mesaj_gonder(mesaj)
+            if "/tools/european-training-calendar/training/" in href:
+                baslik = a_etiketi.text.strip()
                 
+                # Eğer başlık boş değilse ve listeye henüz eklemediysek
+                if baslik and baslik not in [ilan["baslik"] for ilan in bulunan_ilanlar]:
+                    tam_link = "https://www.salto-youth.net" + href
+                    bulunan_ilanlar.append({"baslik": baslik, "link": tam_link})
+        
+        if not bulunan_ilanlar:
+            mesaj_gonder("⚠️ <b>SİTEYE GİRDİM AMA İLAN LİNKLERİNİ AYIKLAYAMADIM.</b>")
+            return
+            
+        # O 109 ilanın en güncel olan ilk 3 tanesini Telegram'a gönderiyoruz!
+        for ilan in bulunan_ilanlar[:3]:
+            mesaj = f"🚨 <b>RADARA YENİ PROJE TAKILDI!</b>\n\n📌 <b>{ilan['baslik']}</b>\n\n🌍 <b>Platform:</b> SALTO-YOUTH\n\n🔗 <a href='{ilan['link']}'>Detaylar ve Başvuru İçin Tıkla</a>"
+            mesaj_gonder(mesaj)
+            
     except Exception as e:
         mesaj_gonder(f"❌ <b>SİSTEM HATASI:</b> {e}")
 
