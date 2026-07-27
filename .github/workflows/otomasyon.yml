@@ -5,7 +5,6 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
-# Botun depoya dosya kaydedebilmesi için yazma izni veriyoruz
 permissions:
   contents: write 
 
@@ -31,10 +30,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
 
-      - name: - name: Hafızayı GitHub'a Kaydet
+      - name: Hafızayı GitHub'a Kaydet
         run: |
           git config --global user.name "Erasmus Bot"
           git config --global user.email "bot@erasmusradar.com"
           git add gecmis_ilanlar.txt projeler.json || true
-          git commit -m "Hafiza ve veritabani guncellendi" || echo "Degisiklik yok"
-          git push || true
+          git diff --staged --quiet || git commit -m "Hafiza ve veritabani guncellendi"
+          git push || echo "Push basarili veya degisiklik yok"
