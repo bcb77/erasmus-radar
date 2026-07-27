@@ -31,10 +31,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
 
-      - name: Hafızayı GitHub'a Kaydet
+      - name: - name: Hafızayı GitHub'a Kaydet
         run: |
           git config --global user.name "Erasmus Bot"
           git config --global user.email "bot@erasmusradar.com"
-          git add gecmis_ilanlar.txt || true
-          git commit -m "Hafiza guncellendi" || echo "Degisiklik yok"
+          git add gecmis_ilanlar.txt projeler.json || true
+          git commit -m "Hafiza ve veritabani guncellendi" || echo "Degisiklik yok"
           git push || true
