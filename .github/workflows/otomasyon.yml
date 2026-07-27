@@ -2,8 +2,12 @@ name: Erasmus Botunu Calistir
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
-  workflow_dispatch: # Bu sayede butona basıp manuel de çalıştırabiliriz
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+# Botun depoya dosya kaydedebilmesi için yazma izni veriyoruz
+permissions:
+  contents: write 
 
 jobs:
   build:
@@ -19,10 +23,18 @@ jobs:
           python-version: '3.10'
 
       - name: Gerekli Paketleri Yükle
-        run:  pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4
 
       - name: Botu Çalıştır
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python bot.py
+
+      - name: Hafızayı GitHub'a Kaydet
+        run: |
+          git config --global user.name "Erasmus Bot"
+          git config --global user.email "bot@erasmusradar.com"
+          git add gecmis_ilanlar.txt || true
+          git commit -m "Hafiza guncellendi" || echo "Degisiklik yok"
+          git push || true
