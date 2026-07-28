@@ -43,7 +43,7 @@ def avci_bot():
     salto_ilanlar = []
     eplus_ilanlar = []
     
-    # --- 1. HEDEF: SALTO (Fiziksel Filtreli ve Akıllı Link Kontrollü) ---
+    # --- 1. HEDEF: SALTO (Kökten Çözümlü Link Temizleyici) ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
@@ -53,11 +53,15 @@ def avci_bot():
                 if "/tools/european-training-calendar/training/" in href:
                     baslik = a.text.strip()
                     
-                    # Akıllı Link Düzeltici: Eğer link zaten http ile başlıyorsa olduğu gibi bırak
-                    if href.startswith("http"):
-                        tam_link = href
-                    else:
-                        tam_link = "https://www.salto-youth.net" + (href if href.startswith("/") else "/" + href)
+                    # KESİN ÇÖZÜM: Siteden gelen linkin içindeki bozuk/sağlam domain kısmını tamamen kesip atıyoruz
+                    if "salto-youth.net" in href:
+                        href = href.split("salto-youth.net")[-1]
+                        
+                    # Elimizde sadece "/tools/..." kısmı kaldı. Şimdi temizce birleştiriyoruz.
+                    if not href.startswith("/"):
+                        href = "/" + href
+                        
+                    tam_link = "https://www.salto-youth.net" + href
                     
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
                     
@@ -82,7 +86,6 @@ def avci_bot():
                 ]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
-                # Başlık 30 karakterden uzun, içinde en az 2 tire (-) olan ve menü olmayan gerçek projeler
                 if len(baslik) > 30 and not gereksiz_mi and href.count("-") >= 2 and href != "#" and not href.startswith("mailto:"):
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
@@ -98,7 +101,6 @@ def avci_bot():
             mesaj_gonder(mesaj)
             hafizaya_yaz(ilan['link'])
             
-        # Hem Telegram'a atar hem de sitenin okuyacağı arşivi günceller
         veritabanini_guncelle(gonderilecekler)
 
 if __name__ == "__main__":
