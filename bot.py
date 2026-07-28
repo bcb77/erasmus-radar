@@ -22,13 +22,13 @@ def hafizaya_yaz(link):
 
 def veritabanini_guncelle(yeni_ilanlar):
     """Bulunan projeleri Streamlit sitesinin okuması için JSON olarak kaydeder."""
-    mevcut_projeler = []
+    mevc_projeler = []
     if os.path.exists(VERITABANI):
         with open(VERITABANI, "r", encoding="utf-8") as f:
-            try: mevcut_projeler = json.load(f)
+            try: mevc_projeler = json.load(f)
             except: pass
             
-    guncel_liste = yeni_ilanlar + mevcut_projeler
+    guncel_liste = yeni_ilanlar + mevc_projeler
     with open(VERITABANI, "w", encoding="utf-8") as f:
         json.dump(guncel_liste[:30], f, ensure_ascii=False, indent=4)
 
@@ -43,15 +43,21 @@ def avci_bot():
     salto_ilanlar = []
     eplus_ilanlar = []
     
-    # --- 1. HEDEF: SALTO (Fiziksel Filtreli) ---
+    # --- 1. HEDEF: SALTO (Fiziksel Filtreli ve Akıllı Link Kontrollü) ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
             soup = BeautifulSoup(res_salto.content, "html.parser")
             for a in soup.find_all("a", href=True):
-                if "/tools/european-training-calendar/training/" in a["href"]:
+                href = a["href"]
+                if "/tools/european-training-calendar/training/" in href:
                     baslik = a.text.strip()
-                    tam_link = "https://www.salto-youth.net" + a["href"]
+                    
+                    # Akıllı Link Düzeltici: Eğer link zaten http ile başlıyorsa olduğu gibi bırak
+                    if href.startswith("http"):
+                        tam_link = href
+                    else:
+                        tam_link = "https://www.salto-youth.net" + (href if href.startswith("/") else "/" + href)
                     
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
                     
