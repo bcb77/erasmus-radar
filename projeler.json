@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "EU Paths and Perspectives",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eu-paths-and-perspectives.15011/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Art of Balance through Daoist Wisdom",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-art-of-balance-through-daoist-wisdom.15046/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Almanya Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/almanya-genclik-degisimi-projesi-41/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "\"Bet on Wellbeing: Youth Work Against Gambling Risks\" - Training in Romania",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/bet-on-wellbeing-youth-work-against-gambling-risks-training-in-romania.15123/",
         "platform": "SALTO-YOUTH"
@@ -132,11 +147,6 @@
     {
         "baslik": "Bulgaristan Kısa Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/bulgaristan-kisa-donem-esc-projesi-29/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Romanya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/romanya-genclik-degisimi-projesi-30/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
