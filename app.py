@@ -64,7 +64,7 @@ st.divider()
 
 VERITABANI = "projeler.json"
 
-# Güvenli Veri Okuma Mekanizması (Asla çökmez, hata vermez)
+# Güvenli Veri Okuma Mekanizması
 projeler = []
 if os.path.exists(VERITABANI):
     try:
@@ -84,6 +84,12 @@ else:
             baslik = proje.get("baslik", "İsimsiz Proje")
             platform = proje.get("platform", "Erasmus+")
             link = proje.get("link", "#")
+            
+            # --- GEÇMİŞTEN KALAN BOZUK LİNKLERİ TEMİZLEME FİLTRESİ ---
+            if "salto-youth.net" in link and "tools/european-training-calendar/training/" in link:
+                idx = link.find("tools/european-training-calendar/training/")
+                link = "https://www.salto-youth.net/" + link[idx:]
+            # -----------------------------------------------------------
             
             st.subheader(f"📌 {baslik}")
             st.caption(f"**Platform:** {platform}")
