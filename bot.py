@@ -42,26 +42,25 @@ def avci_bot():
     eski_linkler = hafizayi_oku()
     salto_ilanlar = []
     eplus_ilanlar = []
+    erasmusgram_ilanlar = []
     
-    # --- 1. HEDEF: SALTO (Kökten Çözümlü Link Temizleyici) ---
+    # --- 1. HEDEF: SALTO (Kusursuz Cımbız Yöntemi) ---
     try:
         res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
         if res_salto.status_code == 200:
             soup = BeautifulSoup(res_salto.content, "html.parser")
             for a in soup.find_all("a", href=True):
                 href = a["href"]
-                if "/tools/european-training-calendar/training/" in href:
+                if "tools/european-training-calendar/training/" in href:
                     baslik = a.text.strip()
                     
-                    # KESİN ÇÖZÜM: Siteden gelen linkin içindeki bozuk/sağlam domain kısmını tamamen kesip atıyoruz
-                    if "salto-youth.net" in href:
-                        href = href.split("salto-youth.net")[-1]
-                        
-                    # Elimizde sadece "/tools/..." kısmı kaldı. Şimdi temizce birleştiriyoruz.
-                    if not href.startswith("/"):
-                        href = "/" + href
-                        
-                    tam_link = "https://www.salto-youth.net" + href
+                    # KESİN ÇÖZÜM v3: Öncesinde ne yazdığının hiçbir önemi yok.
+                    # Linkin içinden sadece "tools/..." ile başlayan kısmı kesip alıyoruz.
+                    idx = href.find("tools/european-training-calendar/training/")
+                    temiz_kisim = href[idx:]
+                    
+                    # Ve ana domainin sonuna yapıştırıyoruz. Artık çift yazma şansı SIFIR!
+                    tam_link = "https://www.salto-youth.net/" + temiz_kisim
                     
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
                     
@@ -69,7 +68,7 @@ def avci_bot():
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception: pass
 
-    # --- 2. HEDEF: E+ TÜRKİYE (Sıkı Filtreli ve Menü Ayıklayıcılı) ---
+    # --- 2. HEDEF: E+ TÜRKİYE (Sıkı Filtreli) ---
     try:
         res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers)
         if res_eplus.status_code == 200:
@@ -78,7 +77,6 @@ def avci_bot():
                 href = a["href"]
                 baslik = a.text.strip()
                 
-                # Sitenin menü sekmelerini ve çöpleri eleyen kara liste
                 yasakli_kelimeler = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "work and travel", "geçmiş", "vizyon", "misyon", "sss", "sorular",
@@ -92,8 +90,33 @@ def avci_bot():
                         eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
     except Exception: pass
 
+    # --- 3. HEDEF: ERASMUSGRAM (Yeni Eklenti) ---
+    try:
+        res_eg = requests.get("https://www.erasmusgram.com/category/avrupa-birligi-projeleri/", headers=headers)
+        if res_eg.status_code == 200:
+            soup_eg = BeautifulSoup(res_eg.content, "html.parser")
+            for a in soup_eg.find_all("a", href=True):
+                href = a["href"]
+                baslik = a.text.strip()
+                
+                # Sitenin etiket, yazar, menü ve kategori linklerini es geçiyoruz
+                if "/category/" in href or "/tag/" in href or "/author/" in href or "page/" in href:
+                    continue
+                    
+                yasakli_kelimeler_eg = ["kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika", "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more"]
+                gereksiz_mi_eg = any(yasak in baslik.lower() for yasak in yasakli_kelimeler_eg)
+                
+                # Başlık en az 20 karakterse ve menü çöplüğü değilse, gerçek bir projedir
+                if len(baslik) > 20 and not gereksiz_mi_eg and href != "#":
+                    tam_link = href if href.startswith("http") else "https://www.erasmusgram.com" + (href if href.startswith("/") else "/" + href)
+                    if tam_link not in eski_linkler and tam_link not in [i["link"] for i in erasmusgram_ilanlar]:
+                        erasmusgram_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmusgram"})
+    except Exception: pass
+
+
     # --- GÖNDERİM VE VERİTABANI KAYDI ---
-    gonderilecekler = salto_ilanlar[:3] + eplus_ilanlar[:3]
+    # Her üç platformdan da en yeni 3 taneyi alır
+    gonderilecekler = salto_ilanlar[:3] + eplus_ilanlar[:3] + erasmusgram_ilanlar[:3]
     
     if gonderilecekler:
         for ilan in gonderilecekler:
