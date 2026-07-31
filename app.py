@@ -5,18 +5,17 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Renkli siyasi harita arka planı, 0.70 karartma, cam efektli kutular ve beyaz yazılar
+# CSS: Renkli siyasi harita arka planı, 0.69 karartma, cam efektli kutular ve beyaz yazılar
 st.markdown(
     """
     <style>
     .stApp {
         /* 0.69 Karartma ve Kendi GitHub Linkin */
-        background-image: linear-gradient(rgba(5, 8, 15, 0.69), rgba(5, 8, 15, 0.69)), url("KOPYALADIGIN_RAW_GITHUB_LINKINI_BURAYA_YAPISTIR");
+        background-image: linear-gradient(rgba(5, 8, 15, 0.69), rgba(5, 8, 15, 0.69)), url("https://raw.githubusercontent.com/bcb77/erasmus-radar/main/Harita%20g%C3%B6rseli.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    }
     }
     
     h1, h2, h3, p, span, label {
