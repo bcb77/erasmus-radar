@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Hırvatistan , Samobor : 10 Gün Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/hirvatistan-samobor-10-gun-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Estonya : 7 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/estonya-7-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Bursa : 8 Gün Gençlik Değişimi Programı",
+        "link": "https://www.erasmusgram.com/bursa-8-gun-genclik-degisimi-programi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Building Safe and Inclusive Youth Exchanges",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/building-safe-and-inclusive-youth-exchanges.15117/",
         "platform": "SALTO-YOUTH"
@@ -133,20 +148,5 @@
         "baslik": "Reset & Recharge",
         "link": "https://www.salto-youth.nethttps://www.salto-youth.net/tools/european-training-calendar/training/reset-recharge.15120/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Estonya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/estonya-genclik-degisimi-projesi-3/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Kuzey Makedonya Kısa Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/kuzey-makedonya-kisa-donem-esc-projesi-7/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Polonya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/polonya-genclik-degisimi-projesi-20/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
