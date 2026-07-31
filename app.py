@@ -5,12 +5,12 @@ import os
 # Sayfa ayarları
 st.set_page_config(page_title="Erasmus Radar", page_icon="🌍", layout="centered")
 
-# CSS: Harita arka planı, cam efektli kutular ve beyaz yazılar
+# CSS: Renkli siyasi harita arka planı, 0.70 karartma, cam efektli kutular ve beyaz yazılar
 st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(rgba(5, 8, 15, 0.75), rgba(5, 8, 15, 0.75)), url("https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1920&auto=format&fit=crop");
+        background-image: linear-gradient(rgba(5, 8, 15, 0.70), rgba(5, 8, 15, 0.70)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Europe_political_map_en.svg/1920px-Europe_political_map_en.svg.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
