@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Building Safe and Inclusive Youth Exchanges",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/building-safe-and-inclusive-youth-exchanges.15117/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Learning by Bussing 2.0: from Denmark to Czechia",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/learning-by-bussing-2-0-from-denmark-to-czechia.14934/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "EU Paths and Perspectives",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eu-paths-and-perspectives.15011/",
         "platform": "SALTO-YOUTH"
@@ -137,16 +147,6 @@
     {
         "baslik": "Polonya Gençlik Değişimi Projesi",
         "link": "https://www.eplusturkiye.org/proje/polonya-genclik-degisimi-projesi-20/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Portekiz Uzun Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/portekiz-uzun-donem-esc-projesi-31/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Bulgaristan Kısa Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-kisa-donem-esc-projesi-29/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
