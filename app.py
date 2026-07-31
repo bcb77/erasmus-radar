@@ -10,11 +10,13 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: linear-gradient(rgba(5, 8, 15, 0.70), rgba(5, 8, 15, 0.70)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Europe_political_map_en.svg/1920px-Europe_political_map_en.svg.png");
+        /* 0.69 Karartma ve Kendi GitHub Linkin */
+        background-image: linear-gradient(rgba(5, 8, 15, 0.69), rgba(5, 8, 15, 0.69)), url("KOPYALADIGIN_RAW_GITHUB_LINKINI_BURAYA_YAPISTIR");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+    }
     }
     
     h1, h2, h3, p, span, label {
