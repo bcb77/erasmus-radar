@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "DigiYouth LAB",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digiyouth-lab.15145/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Art of Holding Space for Others without Losing Yourself - Systemic Perspective",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-art-of-holding-space-for-others-without-losing-yourself-systemic-perspective.15139/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Yunanistan , Selanik : 7 Gün Erasmus+ Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/yunanistan-selanik-7-gun-erasmus-genclik-degisimi/",
         "platform": "Erasmusgram"
@@ -137,16 +147,6 @@
     {
         "baslik": "The Art of Balance through Daoist Wisdom",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-art-of-balance-through-daoist-wisdom.15046/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Almanya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/almanya-genclik-degisimi-projesi-41/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "\"Bet on Wellbeing: Youth Work Against Gambling Risks\" - Training in Romania",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/bet-on-wellbeing-youth-work-against-gambling-risks-training-in-romania.15123/",
         "platform": "SALTO-YOUTH"
     }
 ]
