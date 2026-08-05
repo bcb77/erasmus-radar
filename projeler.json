@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "POWER: Project Factory for Empowerment of Young People In & After Imprisonment",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/power-project-factory-for-empowerment-of-young-people-in-after-imprisonment.14915/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Ankara Gençlik Çalıştayı Projesi",
         "link": "https://www.eplusturkiye.org/proje/ankara-genclik-calistayi-projesi-2/",
         "platform": "Erasmus+ Türkiye"
@@ -142,11 +147,6 @@
     {
         "baslik": "Hırvatistan : 6 Gün Erasmus+ Programı",
         "link": "https://www.erasmusgram.com/hirvatistan-6-gun-erasmus-programi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Tunus : 7 Gün Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/tunus-7-gun-genclik-degisimi/",
         "platform": "Erasmusgram"
     }
 ]
