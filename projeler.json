@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Ankara Gençlik Çalıştayı Projesi",
+        "link": "https://www.eplusturkiye.org/proje/ankara-genclik-calistayi-projesi-2/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Türkiye Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/turkiye-genclik-degisimi-projesi-42/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "YÖK Destek Bursu Duyurusu",
         "link": "https://www.erasmusgram.com/yok-destek-bursu-duyurusu/",
         "platform": "Erasmusgram"
@@ -137,16 +147,6 @@
     {
         "baslik": "Tunus : 7 Gün Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/tunus-7-gun-genclik-degisimi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Almanya : 10 Gün Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/almanya-10-gun-genclik-degisimi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "İtalya , Venedik : 8 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-venedik-8-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
     }
 ]
