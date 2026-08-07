@@ -9,9 +9,12 @@ HAFIZA_DOSYASI = "gecmis_ilanlar.txt"
 VERITABANI = "projeler.json"
 
 def mesaj_gonder(metin):
-    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
-    payload = {"chat_id": CHAT_ID, "text": metin, "parse_mode": "HTML", "disable_web_page_preview": False}
-    requests.post(url, data=payload)
+    try:
+        url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+        payload = {"chat_id": CHAT_ID, "text": metin, "parse_mode": "HTML", "disable_web_page_preview": False}
+        requests.post(url, data=payload, timeout=10)
+    except Exception as e:
+        print(f"Telegram mesaj hatası: {e}")
 
 def hafizayi_oku():
     if not os.path.exists(HAFIZA_DOSYASI): return []
@@ -21,7 +24,6 @@ def hafizaya_yaz(link):
     with open(HAFIZA_DOSYASI, "a", encoding="utf-8") as f: f.write(link + "\n")
 
 def veritabanini_guncelle(yeni_ilanlar):
-    """Bulunan projeleri Streamlit sitesinin okuması için JSON olarak kaydeder."""
     mevc_projeler = []
     if os.path.exists(VERITABANI):
         with open(VERITABANI, "r", encoding="utf-8") as f:
@@ -29,14 +31,25 @@ def veritabanini_guncelle(yeni_ilanlar):
             except: pass
             
     guncel_liste = yeni_ilanlar + mevc_projeler
+    
+    # Sitede çift/aynı projelerin görünmesini engelleyen benzersizleştirme filtresi
+    benzersiz_liste = []
+    gorulen_linkler = set()
+    for p in guncel_liste:
+        if p["link"] not in gorulen_linkler:
+            benzersiz_liste.append(p)
+            gorulen_linkler.add(p["link"])
+
     with open(VERITABANI, "w", encoding="utf-8") as f:
-        json.dump(guncel_liste[:30], f, ensure_ascii=False, indent=4)
+        json.dump(benzersiz_liste[:30], f, ensure_ascii=False, indent=4)
 
 def avci_bot():
+    # Sitelerin botu engellemesini önleyen güçlendirilmiş tarayıcı kimliği
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Referer": "https://www.google.com/"
     }
     
     eski_linkler = hafizayi_oku()
@@ -44,9 +57,9 @@ def avci_bot():
     eplus_ilanlar = []
     erasmusgram_ilanlar = []
     
-    # --- 1. HEDEF: SALTO (Kusursuz Cımbız Yöntemi) ---
+    # --- 1. HEDEF: SALTO ---
     try:
-        res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers)
+        res_salto = requests.get("https://www.salto-youth.net/tools/european-training-calendar/browse/", headers=headers, timeout=15)
         if res_salto.status_code == 200:
             soup = BeautifulSoup(res_salto.content, "html.parser")
             for a in soup.find_all("a", href=True):
@@ -54,23 +67,21 @@ def avci_bot():
                 if "tools/european-training-calendar/training/" in href:
                     baslik = a.text.strip()
                     
-                    # KESİN ÇÖZÜM v3: Öncesinde ne yazdığının hiçbir önemi yok.
-                    # Linkin içinden sadece "tools/..." ile başlayan kısmı kesip alıyoruz.
                     idx = href.find("tools/european-training-calendar/training/")
                     temiz_kisim = href[idx:]
-                    
-                    # Ve ana domainin sonuna yapıştırıyoruz. Artık çift yazma şansı SIFIR!
                     tam_link = "https://www.salto-youth.net/" + temiz_kisim
                     
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
                     
                     if baslik and tam_link not in eski_linkler and tam_link not in [i["link"] for i in salto_ilanlar]:
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
-    except Exception: pass
+        else:
+            print(f"SALTO engelledi veya ulaşılamadı. HTTP Kodu: {res_salto.status_code}")
+    except Exception as e: print(f"SALTO Hata: {e}")
 
-    # --- 2. HEDEF: E+ TÜRKİYE (Sıkı Filtreli) ---
+    # --- 2. HEDEF: E+ TÜRKİYE ---
     try:
-        res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers)
+        res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers, timeout=15)
         if res_eplus.status_code == 200:
             soup_eplus = BeautifulSoup(res_eplus.content, "html.parser")
             for a in soup_eplus.find_all("a", href=True):
@@ -88,35 +99,36 @@ def avci_bot():
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
                         eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
-    except Exception: pass
+        else:
+            print(f"E+ Türkiye engelledi veya ulaşılamadı. HTTP Kodu: {res_eplus.status_code}")
+    except Exception as e: print(f"E+ Türkiye Hata: {e}")
 
-    # --- 3. HEDEF: ERASMUSGRAM (Yeni Eklenti) ---
+    # --- 3. HEDEF: ERASMUSGRAM ---
     try:
-        res_eg = requests.get("https://www.erasmusgram.com/category/avrupa-birligi-projeleri/", headers=headers)
+        res_eg = requests.get("https://www.erasmusgram.com/category/avrupa-birligi-projeleri/", headers=headers, timeout=15)
         if res_eg.status_code == 200:
             soup_eg = BeautifulSoup(res_eg.content, "html.parser")
             for a in soup_eg.find_all("a", href=True):
                 href = a["href"]
                 baslik = a.text.strip()
                 
-                # Sitenin etiket, yazar, menü ve kategori linklerini es geçiyoruz
                 if "/category/" in href or "/tag/" in href or "/author/" in href or "page/" in href:
                     continue
                     
                 yasakli_kelimeler_eg = ["kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika", "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more"]
                 gereksiz_mi_eg = any(yasak in baslik.lower() for yasak in yasakli_kelimeler_eg)
                 
-                # Başlık en az 20 karakterse ve menü çöplüğü değilse, gerçek bir projedir
                 if len(baslik) > 20 and not gereksiz_mi_eg and href != "#":
                     tam_link = href if href.startswith("http") else "https://www.erasmusgram.com" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in erasmusgram_ilanlar]:
                         erasmusgram_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmusgram"})
-    except Exception: pass
+        else:
+            print(f"Erasmusgram engelledi veya ulaşılamadı. HTTP Kodu: {res_eg.status_code}")
+    except Exception as e: print(f"Erasmusgram Hata: {e}")
 
 
     # --- GÖNDERİM VE VERİTABANI KAYDI ---
-    # Her üç platformdan da en yeni 3 taneyi alır
-    gonderilecekler = salto_ilanlar[:3] + eplus_ilanlar[:3] + erasmusgram_ilanlar[:3]
+    gonderilecekler = salto_ilanlar[:4] + eplus_ilanlar[:4] + erasmusgram_ilanlar[:4]
     
     if gonderilecekler:
         for ilan in gonderilecekler:
@@ -125,6 +137,10 @@ def avci_bot():
             hafizaya_yaz(ilan['link'])
             
         veritabanini_guncelle(gonderilecekler)
+    else:
+        # EĞER YENİ PROJE YOKSA BİLDİRİM GÖNDER (İSTEDİĞİN ÖZELLİK)
+        bilgi_mesaji = "ℹ️ <b>Radar Raporu:</b>\n\nŞu an için SALTO, Erasmus+ Türkiye ve Erasmusgram üzerinde yeni bir fiziksel proje bulunamadı. Aramaya devam ediyorum! 🛰️"
+        mesaj_gonder(bilgi_mesaji)
 
 if __name__ == "__main__":
     avci_bot()
