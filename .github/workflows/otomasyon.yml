@@ -2,7 +2,7 @@ name: Erasmus Botunu Calistir
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -35,5 +35,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add gecmis_ilanlar.txt projeler.json
-          git commit -m "🔄 Otomatik güncelleme: Yeni ilanlar eklendi" || exit 0
+          git commit -m "🔄 Otomatik güncelleme: Yeni veriler kontrol edildi" || exit 0
           git push
