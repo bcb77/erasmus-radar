@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Unfolding",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/unfolding.15149/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Power of Non Formal Education",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-power-of-non-formal-education.15096/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "“Newspaper Theatre Training Course”",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/newspaper-theatre-training-course.15069/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "POWER: Project Factory for Empowerment of Young People In & After Imprisonment",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/power-project-factory-for-empowerment-of-young-people-in-after-imprisonment.14915/",
         "platform": "SALTO-YOUTH"
@@ -132,21 +147,6 @@
     {
         "baslik": "İspanya , Asturias : 5 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/ispanya-asturias-5-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Romanya , Bükreş : 5 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/romanya-bukres-5-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Los Angeles 2028 Olimpiyat Oyunları Gönüllüler Aranıyor",
-        "link": "https://www.erasmusgram.com/los-angeles-2028-olimpiyat-oyunlari-gonulluler-araniyor/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Hırvatistan : 6 Gün Erasmus+ Programı",
-        "link": "https://www.erasmusgram.com/hirvatistan-6-gun-erasmus-programi/",
         "platform": "Erasmusgram"
     }
 ]
