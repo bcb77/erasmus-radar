@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Arnavutluk : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/arnavutluk-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Karadağ : Kısa Dönem Erasmus+ ESC Projesi",
         "link": "https://www.erasmusgram.com/karadag-kisa-donem-erasmus-esc-projesi/",
         "platform": "Erasmusgram"
@@ -143,10 +148,5 @@
         "baslik": "Google 126 Online Eğitimini Ücretsiz Erişime Açtı",
         "link": "https://www.erasmusgram.com/google-126-online-egitimini-ucretsiz-erisime-acti/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "TOSCA Volunteering – Training and Support for Organisations in the European Solidarity Corps",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/tosca-volunteering-training-and-support-for-organisations-in-the-european-solidarity-corps.15021/",
-        "platform": "SALTO-YOUTH"
     }
 ]
