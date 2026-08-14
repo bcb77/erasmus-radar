@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "“Digi-Hack - A Journey Through Digital Competence”",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digi-hack-a-journey-through-digital-competence.15173/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Out with the BurnOut: Recharge. Reflect. Reconnect.",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/out-with-the-burnout-recharge-reflect-reconnect.15163/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Democracy XP: Rule the Game, not the People",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/democracy-xp-rule-the-game-not-the-people.15020/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "\"EUtopia?\" training course for youth workers from EU, SEE and EECA regions",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eutopia-training-course-for-youth-workers-from-eu-see-and-eeca-regions.15118/",
         "platform": "SALTO-YOUTH"
     }
 ]
