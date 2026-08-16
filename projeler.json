@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "YOUnisphere",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/younisphere.14851/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Cross sectoral conference and thematic seminar on inclusion in Erasmus+ : impact and good practices / United in diversity: Erasmus+ in action for an inclusive Europe",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/cross-sectoral-conference-and-thematic-seminar-on-inclusion-in-erasmus-impact-and-good-practices-united-in-diversity-erasmus-in-action-for-an-inclusive-europe.15133/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Navigating the Polarities of Democracy: Diversity & Equality - Live Webinar Series",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/navigating-the-polarities-of-democracy-diversity-equality-live-webinar-series.15174/",
         "platform": "SALTO-YOUTH"
@@ -138,15 +148,5 @@
         "baslik": "Drawing Inclusion through Comics for Youth Work Mobility 1 – Training Course",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/drawing-inclusion-through-comics-for-youth-work-mobility-1-training-course.15161/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İzmir : 4 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/izmir-4-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Gürcistan : 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/gurcistan-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
