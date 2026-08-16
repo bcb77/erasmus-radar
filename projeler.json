@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Coşkunöz Eğitim Vakfı Burs Duyurusu",
+        "link": "https://www.erasmusgram.com/coskunoz-egitim-vakfi-burs-duyurusu/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "YOUnisphere",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/younisphere.14851/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Nil Eğitim Ve Yardımlaşma Derneği NEYAD Burs Duyurusu",
         "link": "https://www.erasmusgram.com/nil-egitim-ve-yardimlasma-dernegi-neyad-burs-duyurusu/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Drawing Inclusion through Comics for Youth Work Mobility 1 – Training Course",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/drawing-inclusion-through-comics-for-youth-work-mobility-1-training-course.15161/",
-        "platform": "SALTO-YOUTH"
     }
 ]
