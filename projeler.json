@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Fransa , Grenoble : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/fransa-grenoble-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "İspanya , Galiçya : 36 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/ispanya-galicya-36-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -142,11 +147,6 @@
     {
         "baslik": "PBA Youth X Culture",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/pba-youth-x-culture.14904/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Mindful Youth Work Mosaic",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mindful-youth-work-mosaic.15098/",
         "platform": "SALTO-YOUTH"
     }
 ]
