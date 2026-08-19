@@ -32,7 +32,6 @@ def veritabanini_guncelle(yeni_ilanlar):
             
     guncel_liste = yeni_ilanlar + mevc_projeler
     
-    # Sitede çift/aynı projelerin görünmesini engelleyen benzersizleştirme filtresi
     benzersiz_liste = []
     gorulen_linkler = set()
     for p in guncel_liste:
@@ -44,24 +43,20 @@ def veritabanini_guncelle(yeni_ilanlar):
         json.dump(benzersiz_liste[:30], f, ensure_ascii=False, indent=4)
 
 def avci_bot():
-    # Güvenlik duvarlarını ve Cloudflare'i aşmak için gerçek bir tarayıcı taklidi yapan gelişmiş maske
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
-        "Upgrade-Insecure-Requests": "1",
-        "Sec-Fetch-Dest": "document",
-        "Sec-Fetch-Mode": "navigate",
-        "Sec-Fetch-Site": "none",
-        "Sec-Fetch-User": "?1"
+        "Upgrade-Insecure-Requests": "1"
     }
     
     eski_linkler = hafizayi_oku()
     salto_ilanlar = []
     eplus_ilanlar = []
     erasmusgram_ilanlar = []
+    
+    print("--- TARAMA BAŞLIYOR ---")
     
     # --- 1. HEDEF: SALTO ---
     try:
@@ -75,18 +70,18 @@ def avci_bot():
                     idx = href.find("tools/european-training-calendar/training/")
                     temiz_kisim = href[idx:]
                     tam_link = "https://www.salto-youth.net/" + temiz_kisim
-                    
                     if "online" in baslik.lower() or "virtual" in baslik.lower(): continue 
-                    
                     if baslik and tam_link not in eski_linkler and tam_link not in [i["link"] for i in salto_ilanlar]:
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception as e: print(f"SALTO Hatası: {e}")
 
-    # --- 2. HEDEF: E+ TÜRKİYE ---
+    # --- 2. HEDEF: E+ TÜRKİYE (FİLTRELER ESNETİLDİ VE LOG EKLENDİ) ---
     try:
         res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers, timeout=15)
+        print(f"E+ Türkiye HTTP Durum Kodu: {res_eplus.status_code}") # İstihbarat Logu
         if res_eplus.status_code == 200:
             soup_eplus = BeautifulSoup(res_eplus.content, "html.parser")
+            bulunan_link_sayisi = 0
             for a in soup_eplus.find_all("a", href=True):
                 href = a["href"]
                 baslik = a.text.strip()
@@ -98,13 +93,16 @@ def avci_bot():
                 ]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
-                if len(baslik) > 30 and not gereksiz_mi and href.count("-") >= 2 and href != "#" and not href.startswith("mailto:"):
+                # KURAL ESNETİLDİ: Artık başlık 20 karakterden uzunsa ve çöplük menü değilse kabul edilecek. Tire (-) zorunluluğu kalktı.
+                if len(baslik) > 20 and not gereksiz_mi and href != "#" and not href.startswith("mailto:"):
+                    bulunan_link_sayisi += 1
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
                         eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
+            print(f"E+ Türkiye'de filtreyi geçen link sayısı: {bulunan_link_sayisi}")
         else:
-            print(f"E+ Türkiye engelledi! HTTP Kodu: {res_eplus.status_code}")
-    except Exception as e: print(f"E+ Türkiye Hatası: {e}")
+            print(f"E+ Türkiye erişimi engelledi! (Kod: {res_eplus.status_code})")
+    except Exception as e: print(f"E+ Türkiye Teknik Hata: {e}")
 
     # --- 3. HEDEF: ERASMUSGRAM ---
     try:
@@ -118,7 +116,6 @@ def avci_bot():
                 if "/category/" in href or "/tag/" in href or "/author/" in href or "page/" in href:
                     continue
                     
-                # Sidebar'dan (yan menü) sızan BURS, STAJ, YÜKSEK LİSANS gibi ilgisiz duyuruları kesen katı filtre
                 yasakli_kelimeler_eg = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more",
@@ -132,7 +129,6 @@ def avci_bot():
                         erasmusgram_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmusgram"})
     except Exception as e: print(f"Erasmusgram Hatası: {e}")
 
-
     # --- GÖNDERİM VE VERİTABANI KAYDI ---
     gonderilecekler = salto_ilanlar[:4] + eplus_ilanlar[:4] + erasmusgram_ilanlar[:4]
     
@@ -143,11 +139,9 @@ def avci_bot():
             hafizaya_yaz(ilan['link'])
             
         veritabanini_guncelle(gonderilecekler)
+        print(f"Toplam {len(gonderilecekler)} yeni proje Telegram'a gönderildi ve siteye eklendi.")
     else:
-        # Bildirim mesajı şu an kapalı, aktif etmek istersen alttaki '#' işaretlerini kaldırabilirsin.
-        # bilgi_mesaji = "ℹ️ <b>Radar Raporu:</b>\n\nŞu an için yeni bir fiziksel proje bulunamadı. Taramaya devam ediyorum! 🛰️"
-        # mesaj_gonder(bilgi_mesaji)
-        pass
+        print("Yeni proje bulunamadı.")
 
 if __name__ == "__main__":
     avci_bot()
