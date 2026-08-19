@@ -44,12 +44,18 @@ def veritabanini_guncelle(yeni_ilanlar):
         json.dump(benzersiz_liste[:30], f, ensure_ascii=False, indent=4)
 
 def avci_bot():
-    # Sitelerin botu engellemesini önleyen güçlendirilmiş tarayıcı kimliği
+    # Güvenlik duvarlarını ve Cloudflare'i aşmak için gerçek bir tarayıcı taklidi yapan gelişmiş maske
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
-        "Referer": "https://www.google.com/"
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document",
+        "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-User": "?1"
     }
     
     eski_linkler = hafizayi_oku()
@@ -66,7 +72,6 @@ def avci_bot():
                 href = a["href"]
                 if "tools/european-training-calendar/training/" in href:
                     baslik = a.text.strip()
-                    
                     idx = href.find("tools/european-training-calendar/training/")
                     temiz_kisim = href[idx:]
                     tam_link = "https://www.salto-youth.net/" + temiz_kisim
@@ -75,9 +80,7 @@ def avci_bot():
                     
                     if baslik and tam_link not in eski_linkler and tam_link not in [i["link"] for i in salto_ilanlar]:
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
-        else:
-            print(f"SALTO engelledi veya ulaşılamadı. HTTP Kodu: {res_salto.status_code}")
-    except Exception as e: print(f"SALTO Hata: {e}")
+    except Exception as e: print(f"SALTO Hatası: {e}")
 
     # --- 2. HEDEF: E+ TÜRKİYE ---
     try:
@@ -100,8 +103,8 @@ def avci_bot():
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in eplus_ilanlar]:
                         eplus_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmus+ Türkiye"})
         else:
-            print(f"E+ Türkiye engelledi veya ulaşılamadı. HTTP Kodu: {res_eplus.status_code}")
-    except Exception as e: print(f"E+ Türkiye Hata: {e}")
+            print(f"E+ Türkiye engelledi! HTTP Kodu: {res_eplus.status_code}")
+    except Exception as e: print(f"E+ Türkiye Hatası: {e}")
 
     # --- 3. HEDEF: ERASMUSGRAM ---
     try:
@@ -115,16 +118,19 @@ def avci_bot():
                 if "/category/" in href or "/tag/" in href or "/author/" in href or "page/" in href:
                     continue
                     
-                yasakli_kelimeler_eg = ["kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika", "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more"]
+                # Sidebar'dan (yan menü) sızan BURS, STAJ, YÜKSEK LİSANS gibi ilgisiz duyuruları kesen katı filtre
+                yasakli_kelimeler_eg = [
+                    "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
+                    "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more",
+                    "burs", "staj", "iş ilanı", "yüksek lisans", "doktora", "çekiliş", "sonuçları"
+                ]
                 gereksiz_mi_eg = any(yasak in baslik.lower() for yasak in yasakli_kelimeler_eg)
                 
                 if len(baslik) > 20 and not gereksiz_mi_eg and href != "#":
                     tam_link = href if href.startswith("http") else "https://www.erasmusgram.com" + (href if href.startswith("/") else "/" + href)
                     if tam_link not in eski_linkler and tam_link not in [i["link"] for i in erasmusgram_ilanlar]:
                         erasmusgram_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "Erasmusgram"})
-        else:
-            print(f"Erasmusgram engelledi veya ulaşılamadı. HTTP Kodu: {res_eg.status_code}")
-    except Exception as e: print(f"Erasmusgram Hata: {e}")
+    except Exception as e: print(f"Erasmusgram Hatası: {e}")
 
 
     # --- GÖNDERİM VE VERİTABANI KAYDI ---
@@ -138,9 +144,10 @@ def avci_bot():
             
         veritabanini_guncelle(gonderilecekler)
     else:
-        # EĞER YENİ PROJE YOKSA BİLDİRİM GÖNDER (İSTEDİĞİN ÖZELLİK)
-        bilgi_mesaji = "ℹ️ <b>Radar Raporu:</b>\n\nŞu an için SALTO, Erasmus+ Türkiye ve Erasmusgram üzerinde yeni bir fiziksel proje bulunamadı. Aramaya devam ediyorum! 🛰️"
-        mesaj_gonder(bilgi_mesaji)
+        # Bildirim mesajı şu an kapalı, aktif etmek istersen alttaki '#' işaretlerini kaldırabilirsin.
+        # bilgi_mesaji = "ℹ️ <b>Radar Raporu:</b>\n\nŞu an için yeni bir fiziksel proje bulunamadı. Taramaya devam ediyorum! 🛰️"
+        # mesaj_gonder(bilgi_mesaji)
+        pass
 
 if __name__ == "__main__":
     avci_bot()
