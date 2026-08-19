@@ -75,10 +75,10 @@ def avci_bot():
                         salto_ilanlar.append({"baslik": baslik, "link": tam_link, "platform": "SALTO-YOUTH"})
     except Exception as e: print(f"SALTO Hatası: {e}")
 
-    # --- 2. HEDEF: E+ TÜRKİYE (FİLTRELER ESNETİLDİ VE LOG EKLENDİ) ---
+    # --- 2. HEDEF: E+ TÜRKİYE ---
     try:
         res_eplus = requests.get("https://www.eplusturkiye.org/projeler/", headers=headers, timeout=15)
-        print(f"E+ Türkiye HTTP Durum Kodu: {res_eplus.status_code}") # İstihbarat Logu
+        print(f"E+ Türkiye HTTP Durum Kodu: {res_eplus.status_code}") 
         if res_eplus.status_code == 200:
             soup_eplus = BeautifulSoup(res_eplus.content, "html.parser")
             bulunan_link_sayisi = 0
@@ -86,14 +86,15 @@ def avci_bot():
                 href = a["href"]
                 baslik = a.text.strip()
                 
+                # YENİ EKLENEN ÇEREZ/REKLAM FİLTRELERİ
                 yasakli_kelimeler = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "work and travel", "geçmiş", "vizyon", "misyon", "sss", "sorular",
-                    "hizmetlerimiz", "başvuru", "şartlar", "galeri", "blog", "dil okulu"
+                    "hizmetlerimiz", "başvuru", "şartlar", "galeri", "blog", "dil okulu",
+                    "cookie", "çerez", "powered by", "aydınlatma"
                 ]
                 gereksiz_mi = any(yasak in baslik.lower() for yasak in yasakli_kelimeler)
                 
-                # KURAL ESNETİLDİ: Artık başlık 20 karakterden uzunsa ve çöplük menü değilse kabul edilecek. Tire (-) zorunluluğu kalktı.
                 if len(baslik) > 20 and not gereksiz_mi and href != "#" and not href.startswith("mailto:"):
                     bulunan_link_sayisi += 1
                     tam_link = href if href.startswith("http") else "https://www.eplusturkiye.org" + (href if href.startswith("/") else "/" + href)
@@ -116,10 +117,12 @@ def avci_bot():
                 if "/category/" in href or "/tag/" in href or "/author/" in href or "page/" in href:
                     continue
                     
+                # YENİ EKLENEN ÇEREZ/REKLAM FİLTRELERİ
                 yasakli_kelimeler_eg = [
                     "kvkk", "gizlilik", "iletişim", "hakkımızda", "anasayfa", "politika",
                     "hizmetlerimiz", "başvuru", "şartlar", "devamını oku", "read more",
-                    "burs", "staj", "iş ilanı", "yüksek lisans", "doktora", "çekiliş", "sonuçları"
+                    "burs", "staj", "iş ilanı", "yüksek lisans", "doktora", "çekiliş", "sonuçları",
+                    "cookie", "çerez", "powered by", "aydınlatma"
                 ]
                 gereksiz_mi_eg = any(yasak in baslik.lower() for yasak in yasakli_kelimeler_eg)
                 
