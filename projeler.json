@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İtalya , Napoli 6 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/italya-napoli-6-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "European Citizenship Academy Seminar",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/european-citizenship-academy-seminar.15188/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "“Digi-Hack - A Journey Through Digital Competence”",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digi-hack-a-journey-through-digital-competence.15173/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Out with the BurnOut: Recharge. Reflect. Reconnect.",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/out-with-the-burnout-recharge-reflect-reconnect.15163/",
         "platform": "SALTO-YOUTH"
     }
 ]
