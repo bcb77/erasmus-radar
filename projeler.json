@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Macaristan : 8 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/macaristan-8-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "İsveç , Malmö : 5 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/isvec-malmo-5-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -143,10 +148,5 @@
         "baslik": "Youth@Work Inclusive Horizons: Empowering Rural Youth through Social Entrepreneurship and Employability",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/youth-work-inclusive-horizons-empowering-rural-youth-through-social-entrepreneurship-and-employability.15088/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İtalya , Siena : 10 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-siena-10-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
