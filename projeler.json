@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Almanya , Bavyera : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/almanya-bavyera-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "İtalya , Senigallia : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/italya-senigallia-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Bosna Hersek  , Mostar : 5 Gün Erasmus+ Seminer",
+        "link": "https://www.erasmusgram.com/bosna-hersek-mostar-5-gun-erasmus-seminer/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Türkiye Gençlik Değişimi Projesi",
         "link": "https://www.eplusturkiye.org/proje/turkiye-genclik-degisimi-projesi-44/",
         "platform": "Erasmus+ Türkiye"
@@ -133,20 +148,5 @@
         "baslik": "I have autism, so what - Training for youth workers",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/i-have-autism-so-what-training-for-youth-workers.15095/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Estonya , Narva : 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/estonya-narva-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "İtalya , Puglia : 8 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-puglia-8-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Yünder Derneği Burs Duyurusu",
-        "link": "https://www.erasmusgram.com/yunder-dernegi-burs-duyurusu/",
-        "platform": "Erasmusgram"
     }
 ]
