@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Türkiye Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/turkiye-genclik-degisimi-projesi-44/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "AMPLIFY! — Video Tools for Stronger Youth Voices",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/amplify-video-tools-for-stronger-youth-voices.15213/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Yünder Derneği Burs Duyurusu",
         "link": "https://www.erasmusgram.com/yunder-dernegi-burs-duyurusu/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Partnership Building Activity in the field of Mobility of Youth Workers",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/partnership-building-activity-in-the-field-of-mobility-of-youth-workers.15075/",
-        "platform": "SALTO-YOUTH"
     }
 ]
