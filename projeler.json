@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "DIGI-DEM – Digital Participation for Democratic Youth Work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digi-dem-digital-participation-for-democratic-youth-work.15209/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "PBA Make the Move for Green Inclusion V",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/pba-make-the-move-for-green-inclusion-v.14513/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Almanya , Obing : Kısa Dönem Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/almanya-obing-kisa-donem-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -138,15 +148,5 @@
         "baslik": "Değer Eğitim Vakfı Burs Duyurusu",
         "link": "https://www.erasmusgram.com/deger-egitim-vakfi-burs-duyurusu/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Nordic Thematic Seminar 2026",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nordic-thematic-seminar-2026.15146/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Growing Together",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/growing-together.15168/",
-        "platform": "SALTO-YOUTH"
     }
 ]
