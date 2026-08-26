@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "EYE Opener",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eye-opener.15084/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Working with Queer Youth",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/working-with-queer-youth.14859/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "İtalya , Manerba del Garda : 8 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/italya-manerba-del-garda-8-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -137,16 +147,6 @@
     {
         "baslik": "İspanya Kısa Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/ispanya-kisa-donem-esc-projesi-26/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Polonya Kısa Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/polonya-kisa-donem-esc-projesi-17/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Powered by Cookie Information",
-        "link": "https://cookieinformation.com/?utm_campaign=van-ons-go-premium&utm_source=van-ons-wp&utm_medium=referral",
         "platform": "Erasmus+ Türkiye"
     }
 ]
