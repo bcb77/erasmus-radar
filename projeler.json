@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "EuroMed Participation Lab - PBA on Youth participation Activities KA154",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/euromed-participation-lab-pba-on-youth-participation-activities-ka154.15148/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "EYE Opener",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eye-opener.15084/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Letonya Uzun Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/letonya-uzun-donem-esc-projesi-12/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "İspanya Kısa Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/ispanya-kisa-donem-esc-projesi-26/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
