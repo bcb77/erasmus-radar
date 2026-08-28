@@ -1,5 +1,30 @@
 [
     {
+        "baslik": "SO.ART - SOCIAL AND PARTICIPATORY ARTS FOR YOUTH COMMUNITY BUILDING",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/so-art-social-and-participatory-arts-for-youth-community-building.15200/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "SHIFT - Smart Hands-on Innovation & Facilitation Tech in Youth work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/shift-smart-hands-on-innovation-facilitation-tech-in-youth-work.15184/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Second Call for 'The Get Together' III:  ‘Practitioner As Person’ – Connection and Recharge - Creating Meaningful Space and Time for YOU the person",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/second-call-for-the-get-together-iii-practitioner-as-person-connection-and-recharge-creating-meaningful-space-and-time-for-you-the-person.15206/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Ask Better, Teach Better: Question‑driven AI & advocacy in youth work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ask-better-teach-better-question-driven-ai-advocacy-in-youth-work.15018/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "İstanbul 4 Gün Erasmus+ Seminer",
+        "link": "https://www.erasmusgram.com/istanbul-4-gun-erasmus-seminer/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "İtalya Palermo: 3 Gün Gençler için Girişimcilik Programı",
         "link": "https://www.erasmusgram.com/italya-palermo-3-gun-gencler-icin-girisimcilik-programi/",
         "platform": "Erasmusgram"
@@ -122,31 +147,6 @@
     {
         "baslik": "AMPLIFY! — Video Tools for Stronger Youth Voices",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/amplify-video-tools-for-stronger-youth-voices.15213/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "The Game Changer 2.0: From Board Games to Learning in Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-game-changer-2-0-from-board-games-to-learning-in-youth-work.15122/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Macaristan : 8 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/macaristan-8-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "İsveç , Malmö : 5 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/isvec-malmo-5-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "İtalya , Napoli 6 Gün Erasmus+ Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/italya-napoli-6-gun-erasmus-genclik-degisimi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "European Citizenship Academy Seminar",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/european-citizenship-academy-seminar.15188/",
         "platform": "SALTO-YOUTH"
     }
 ]
