@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Practical Tools for Creative Youth STEAM Projects",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/practical-tools-for-creative-youth-steam-projects.15026/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "SO.ART - SOCIAL AND PARTICIPATORY ARTS FOR YOUTH COMMUNITY BUILDING",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/so-art-social-and-participatory-arts-for-youth-community-building.15200/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Türkiye Gençlik Değişimi Projesi",
         "link": "https://www.eplusturkiye.org/proje/turkiye-genclik-degisimi-projesi-44/",
         "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "AMPLIFY! — Video Tools for Stronger Youth Voices",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/amplify-video-tools-for-stronger-youth-voices.15213/",
-        "platform": "SALTO-YOUTH"
     }
 ]
