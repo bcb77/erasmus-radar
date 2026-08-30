@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Bulgaristan Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-projesi-24/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Almanya Kısa Dönem ESC Projesi",
+        "link": "https://www.eplusturkiye.org/proje/almanya-kisa-donem-esc-projesi-8/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Fransa Uzun Dönem ESC Projesi",
+        "link": "https://www.eplusturkiye.org/proje/fransa-uzun-donem-esc-projesi-40/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Bulgaristan Uzun Dönem Esc Projesi",
+        "link": "https://www.eplusturkiye.org/proje/bulgaristan-uzun-donem-esc-projesi-37/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Fransa Uzun Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/fransa-uzun-donem-esc-projesi-41/",
         "platform": "Erasmus+ Türkiye"
@@ -128,25 +148,5 @@
         "baslik": "Write a Project, Make a Change!",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/write-a-project-make-a-change.15201/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Participation, Engagement and Impact Lab for Multicultural Youth",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/participation-engagement-and-impact-lab-for-multicultural-youth.14932/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Agile Project Management and Scrum",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/agile-project-management-and-scrum.15112/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Innovative practices for active citizenship",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/innovative-practices-for-active-citizenship.15175/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Harvard Üniversitesi: Ücretsiz 105 adet Online Kurs",
-        "link": "https://www.erasmusgram.com/harvard-universitesi-ucretsiz-105-adet-online-kurs/",
-        "platform": "Erasmusgram"
     }
 ]
