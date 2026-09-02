@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Nasreddin Hodja Goes to the Theatre",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nasreddin-hodja-goes-to-the-theatre.15225/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Edge Effect",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-effect.15190/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "CTRL+REAL – Manipulated realities DECODED",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ctrl-real-manipulated-realities-decoded.15142/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "İtalya , Sardunya : 6 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/italya-sardunya-6-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "THE BODY AS A BRIDGE - A training course on inclusion through body awareness & movement",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-body-as-a-bridge-a-training-course-on-inclusion-through-body-awareness-movement.15196/",
         "platform": "SALTO-YOUTH"
@@ -127,26 +147,6 @@
     {
         "baslik": "Bulgaristan Uzun Dönem Esc Projesi",
         "link": "https://www.eplusturkiye.org/proje/bulgaristan-uzun-donem-esc-projesi-37/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Fransa Uzun Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/fransa-uzun-donem-esc-projesi-41/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "İtalya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/italya-genclik-degisimi-projesi-37/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Gürcistan Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/gurcistan-egitim-kursu-projesi-5/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Fransa Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/fransa-egitim-kursu-projesi-31/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
