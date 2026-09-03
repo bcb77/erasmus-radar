@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Compass : ONLY for SLOVAK participants living and studying in Slovakia",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/compass-only-for-slovak-participants-living-and-studying-in-slovakia.15236/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "EmpathyLab Training Course",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/empathylab-training-course.15252/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Nasreddin Hodja Goes to the Theatre",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nasreddin-hodja-goes-to-the-theatre.15225/",
         "platform": "SALTO-YOUTH"
@@ -137,16 +147,6 @@
     {
         "baslik": "Almanya Kısa Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/almanya-kisa-donem-esc-projesi-8/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Fransa Uzun Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/fransa-uzun-donem-esc-projesi-40/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Bulgaristan Uzun Dönem Esc Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-uzun-donem-esc-projesi-37/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
