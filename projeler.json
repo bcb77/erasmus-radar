@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Welcome in ESC",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/welcome-in-esc.15178/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Facilitation StarterPack 1.0",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/facilitation-starterpack-1-0.15269/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Municipalities4Democracy - Local youth policy and youth voice",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/municipalities4democracy-local-youth-policy-and-youth-voice.14817/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Unleashing Creativity: From Lens to Life",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/unleashing-creativity-from-lens-to-life.15226/",
         "platform": "SALTO-YOUTH"
     }
 ]
