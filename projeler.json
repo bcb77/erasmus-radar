@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Türkiye , Azerbaycan: 5 Gün Uluslararası Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/turkiye-azerbaycan-5-gun-uluslararasi-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Yunanistan Kısa Dönem ESC Projesi",
         "link": "https://www.eplusturkiye.org/proje/yunanistan-kisa-donem-esc-projesi-24/",
         "platform": "Erasmus+ Türkiye"
@@ -142,11 +147,6 @@
     {
         "baslik": "EmpathyLab Training Course",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/empathylab-training-course.15252/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Nasreddin Hodja Goes to the Theatre",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nasreddin-hodja-goes-to-the-theatre.15225/",
         "platform": "SALTO-YOUTH"
     }
 ]
