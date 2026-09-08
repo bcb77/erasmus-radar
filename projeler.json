@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "LIFT — Leadership, Impact, Facilitation & Teamwork",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/lift-leadership-impact-facilitation-teamwork.15214/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Live, Work, Create – Forwardlooking Youth Participation in Tromsø, the European Youth Capital of 2026",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/live-work-create-forwardlooking-youth-participation-in-troms-the-european-youth-capital-of-2026.15253/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "The Edge Effect",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-effect.15190/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "CTRL+REAL – Manipulated realities DECODED",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ctrl-real-manipulated-realities-decoded.15142/",
         "platform": "SALTO-YOUTH"
     }
 ]
