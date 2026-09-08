@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Yunanistan Kısa Dönem ESC Projesi",
+        "link": "https://www.eplusturkiye.org/proje/yunanistan-kisa-donem-esc-projesi-24/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "LIFT — Leadership, Impact, Facilitation & Teamwork",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/lift-leadership-impact-facilitation-teamwork.15214/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Nasreddin Hodja Goes to the Theatre",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nasreddin-hodja-goes-to-the-theatre.15225/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "The Edge Effect",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-effect.15190/",
         "platform": "SALTO-YOUTH"
     }
 ]
