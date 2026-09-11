@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Growing Youth Work in Eastern Europe and Caucasus",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/growing-youth-work-in-eastern-europe-and-caucasus.15203/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Spark: Understanding What Drives Youth Engagement",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-spark-understanding-what-drives-youth-engagement.15302/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Conflict and Collaboration: Team Skills for International Youth Work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/conflict-and-collaboration-team-skills-for-international-youth-work.15301/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Climate-Conscious Youth Work (2nd edition)",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/climate-conscious-youth-work-2nd-edition.15235/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Creative circles: Voices",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/creative-circles-voices.15263/",
         "platform": "SALTO-YOUTH"
@@ -127,26 +147,6 @@
     {
         "baslik": "Draw the change : Graphic facilitation, stress and burnout in youth work.",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/draw-the-change-graphic-facilitation-stress-and-burnout-in-youth-work.15246/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Dealing with Conflict in Youth Work - II edition Italy",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/dealing-with-conflict-in-youth-work-ii-edition-italy.15171/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "ID Talks: Social Sport",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/id-talks-social-sport.15127/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "AI Literacy for Inclusive Youth Participation",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ai-literacy-for-inclusive-youth-participation.15281/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Mental Health in Youth Work - Training Course",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mental-health-in-youth-work-training-course.14930/",
         "platform": "SALTO-YOUTH"
     }
 ]
