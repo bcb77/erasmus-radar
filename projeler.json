@@ -1,5 +1,30 @@
 [
     {
+        "baslik": "Past Forward",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/past-forward.15254/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Volunteering Forum",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/volunteering-forum.15185/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Why municipal youth participation?",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/why-municipal-youth-participation.14905/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Avusturya, Salzburg : 9 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/avusturya-salzburg-9-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Almanya , Kleve : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/almanya-kleve-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Mersin : 6 Gün Erasmus+ Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/mersin-6-gun-erasmus-genclik-degisimi/",
         "platform": "Erasmusgram"
@@ -122,31 +147,6 @@
     {
         "baslik": "Future in Balance",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/future-in-balance.15250/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Play for Human Rights",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/play-for-human-rights.15243/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İspanyolca Öğrenmek İçin A1 ve A2 Seviyesi Ücretsiz Kaynaklar",
-        "link": "https://www.erasmusgram.com/ispanyolca-ogrenmek-icin-a1-ve-a2-seviyesi-ucretsiz-kaynaklar/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Wikipedia for Peace 2026: Remembering Genocide",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/wikipedia-for-peace-2026-remembering-genocide.15223/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İtalya : 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Welcome in ESC",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/welcome-in-esc.15178/",
         "platform": "SALTO-YOUTH"
     }
 ]
