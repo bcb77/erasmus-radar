@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Mersin : 6 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/mersin-6-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Üniversite Öğrencileri için : Vergisiz Telefon, Tablet ve İnternet Fırsatı",
+        "link": "https://www.erasmusgram.com/universite-ogrencileri-icin-vergisiz-telefon-tablet-ve-internet-firsati/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Growing Youth Work in Eastern Europe and Caucasus",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/growing-youth-work-in-eastern-europe-and-caucasus.15203/",
         "platform": "SALTO-YOUTH"
@@ -137,16 +147,6 @@
     {
         "baslik": "Welcome in ESC",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/welcome-in-esc.15178/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Facilitation StarterPack 1.0",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/facilitation-starterpack-1-0.15269/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Draw the change : Graphic facilitation, stress and burnout in youth work.",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/draw-the-change-graphic-facilitation-stress-and-burnout-in-youth-work.15246/",
         "platform": "SALTO-YOUTH"
     }
 ]
