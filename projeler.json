@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Training Course \"Roots\" - Life Paths",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/training-course-roots-life-paths.15287/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Training course \"Career UP\"",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/training-course-career-up.15303/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "WWF-led Educator Training \"Getting Active for Nature\"",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/wwf-led-educator-training-getting-active-for-nature.15239/",
         "platform": "SALTO-YOUTH"
@@ -137,16 +147,6 @@
     {
         "baslik": "Wellness Navigators - Webinar Series",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/wellness-navigators-webinar-series.15262/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "WE NEET YOU: Seminar on Pathways for NEET Youth",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/we-neet-you-seminar-on-pathways-for-neet-youth.15083/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "International European Solidarity Corps Quality Label Experts meeting 2026",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/international-european-solidarity-corps-quality-label-experts-meeting-2026.15104/",
         "platform": "SALTO-YOUTH"
     }
 ]
