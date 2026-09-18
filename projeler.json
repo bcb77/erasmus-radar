@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "EDU4ALL",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/edu4all.15274/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Second Life - Smart Consumers",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/second-life-smart-consumers.15282/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "PBA with Study Visit Elements on Democratic Transformation and European Values",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/pba-with-study-visit-elements-on-democratic-transformation-and-european-values.15232/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Break the Silence",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/break-the-silence.15279/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Evidence-based approach in Erasmus+ and European Solidarity Corps: Innovations in Research, Research on Innovations",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/evidence-based-approach-in-erasmus-and-european-solidarity-corps-innovations-in-research-research-on-innovations.15167/",
         "platform": "SALTO-YOUTH"
@@ -128,25 +148,5 @@
         "baslik": "Avusturya, Salzburg : 9 Gün Erasmus+ Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/avusturya-salzburg-9-gun-erasmus-genclik-degisimi/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Almanya , Kleve : 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/almanya-kleve-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Mersin : 6 Gün Erasmus+ Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/mersin-6-gun-erasmus-genclik-degisimi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Üniversite Öğrencileri için : Vergisiz Telefon, Tablet ve İnternet Fırsatı",
-        "link": "https://www.erasmusgram.com/universite-ogrencileri-icin-vergisiz-telefon-tablet-ve-internet-firsati/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Growing Youth Work in Eastern Europe and Caucasus",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/growing-youth-work-in-eastern-europe-and-caucasus.15203/",
-        "platform": "SALTO-YOUTH"
     }
 ]
