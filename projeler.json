@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Sportive Horizons",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/sportive-horizons.15283/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Youth Work Today – Facing New Realities",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/youth-work-today-facing-new-realities.15289/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Kosova : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/kosova-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "EDU4ALL",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/edu4all.15274/",
         "platform": "SALTO-YOUTH"
@@ -133,20 +148,5 @@
         "baslik": "Past Forward",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/past-forward.15254/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Volunteering Forum",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/volunteering-forum.15185/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Why municipal youth participation?",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/why-municipal-youth-participation.14905/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Avusturya, Salzburg : 9 Gün Erasmus+ Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/avusturya-salzburg-9-gun-erasmus-genclik-degisimi/",
-        "platform": "Erasmusgram"
     }
 ]
