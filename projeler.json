@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Polonya : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/polonya-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Sportive Horizons",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/sportive-horizons.15283/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Bulgaristan Gençlik Değişimi Projesi",
         "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-projesi-25/",
         "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Past Forward",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/past-forward.15254/",
-        "platform": "SALTO-YOUTH"
     }
 ]
