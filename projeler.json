@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Project Alchemy",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/project-alchemy.15319/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "EAC EMPOWER Impact: Safe Space -  Finding Your Voice & Presence",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eac-empower-impact-safe-space-finding-your-voice-presence.14974/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Quality in Practice: Strengthening Youth Organisations through Self-Assessment and Learning",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/quality-in-practice-strengthening-youth-organisations-through-self-assessment-and-learning.15194/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "TOGETHER WE HOST, TOGETHER WE GROW",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/together-we-host-together-we-grow.15297/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Polonya : 7 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/polonya-7-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -128,25 +148,5 @@
         "baslik": "From Uncertainty to Action",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/from-uncertainty-to-action.15147/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Storytelling: discovering the inner superhero",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/storytelling-discovering-the-inner-superhero.15153/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Visible & Safe in the Entertainment Scene in Europe: Research workshop",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/visible-safe-in-the-entertainment-scene-in-europe-research-workshop.15295/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Yes, and… Go! Entrepreneurial Resilience Through Improv",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/yes-and-go-entrepreneurial-resilience-through-improv.15272/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Bulgaristan Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-projesi-25/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
