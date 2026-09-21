@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "İtalya , Alezio : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/italya-alezio-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Almanya , Berlin : 6 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/almanya-berlin-6-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Streetstival 2026 - Without us, there is no community",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/streetstival-2026-without-us-there-is-no-community.15338/",
         "platform": "SALTO-YOUTH"
@@ -138,15 +148,5 @@
         "baslik": "Toplum Gönüllüleri Vakfı TOG – Aylık 4.500 TL",
         "link": "https://www.erasmusgram.com/toplum-gonulluleri-vakfi-tog-aylik-4-500-tl/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "International Conference Mladost (je) ni norost 2026",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/international-conference-mladost-je-ni-norost-2026.15218/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Storytelling as a Tool for Change",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/storytelling-as-a-tool-for-change.15231/",
-        "platform": "SALTO-YOUTH"
     }
 ]
