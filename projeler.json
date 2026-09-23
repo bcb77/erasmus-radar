@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Gürcistan : 8 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/gurcistan-8-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "LEC (Love Every Challenge)",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/lec-love-every-challenge.15310/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "İspanya , Girona : 7 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/ispanya-girona-7-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Training Course \"Roots\" - Life Paths",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/training-course-roots-life-paths.15287/",
-        "platform": "SALTO-YOUTH"
     }
 ]
