@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Tools for Youth Exchanges",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/tools-for-youth-exchanges.15270/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Gürcistan : 8 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/gurcistan-8-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -143,10 +148,5 @@
         "baslik": "Sparking Change: Enhancing Community Impact in European Solidarity Corps Activities",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/sparking-change-enhancing-community-impact-in-european-solidarity-corps-activities.15102/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İspanya , Girona : 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/ispanya-girona-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
