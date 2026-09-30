@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İtalya , Puglia Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/italya-puglia-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "LIMITLESS Training Course",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/limitless-training-course.15379/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Navigating the Polarities of Democracy: Human Rights & Communal Obligation - Live Webinar Series",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/navigating-the-polarities-of-democracy-human-rights-communal-obligation-live-webinar-series.15315/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "NeuroAI",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/neuroai.15308/",
         "platform": "SALTO-YOUTH"
     }
 ]
