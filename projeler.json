@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "LIMITLESS Training Course",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/limitless-training-course.15379/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "OPEN CALL FOR PARTICIPANTS - Growing into Real Leaders – GIRL",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/open-call-for-participants-growing-into-real-leaders-girl.15285/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Career Launchpad",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/career-launchpad.15307/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "STORYBUILDERS LAB: From Story to STEAM Challenge in Youth Work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/storybuilders-lab-from-story-to-steam-challenge-in-youth-work.15276/",
         "platform": "SALTO-YOUTH"
@@ -132,21 +147,6 @@
     {
         "baslik": "NeuroAI",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/neuroai.15308/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Volunteering 360",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/volunteering-360.15306/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Project Alchemy",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/project-alchemy.15319/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "EAC EMPOWER Impact: Safe Space -  Finding Your Voice & Presence",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eac-empower-impact-safe-space-finding-your-voice-presence.14974/",
         "platform": "SALTO-YOUTH"
     }
 ]
