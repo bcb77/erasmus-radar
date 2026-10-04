@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Tekirdağ : 6 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/tekirdag-6-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "İstanbul : 7 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/istanbul-7-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "\"¿Nos jugamos el futuro?\" Blended training on game-based methods for climate action (in Spanish)",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nos-jugamos-el-futuro-blended-training-on-game-based-methods-for-climate-action-in-spanish.15382/",
         "platform": "SALTO-YOUTH"
@@ -138,15 +148,5 @@
         "baslik": "İtalya Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/italya-egitim-kursu-projesi-45/",
         "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "İtalya , Puglia Kısa Dönem Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-puglia-kisa-donem-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "LIMITLESS Training Course",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/limitless-training-course.15379/",
-        "platform": "SALTO-YOUTH"
     }
 ]
