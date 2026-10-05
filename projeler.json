@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "İzmir KA2 Projesi Hareketliliği",
+        "link": "https://www.eplusturkiye.org/proje/izmir-ka2-projesi-hareketliligi/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Azerbaycan , Bakü : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/azerbaycan-baku-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Gürcistan , Bakuriani: 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/gurcistan-bakuriani-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "EAC EMPOWER Impact: Safe Space -  Kind & Constructive Feedback",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eac-empower-impact-safe-space-kind-constructive-feedback.15400/",
         "platform": "SALTO-YOUTH"
@@ -132,21 +147,6 @@
     {
         "baslik": "MindBoost Academy: Mental Health & Youth Work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mindboost-academy-mental-health-youth-work.15180/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Antalya , Olimpos : 10 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/antalya-olimpos-10-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Dortmund ve Beşiktaş’ta Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/dortmund-ve-besiktasta-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "CirqueVibe - Circus for Well-being and Inclusion in Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/cirquevibe-circus-for-well-being-and-inclusion-in-youth-work.15205/",
         "platform": "SALTO-YOUTH"
     }
 ]
