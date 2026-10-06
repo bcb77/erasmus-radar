@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Türkiye Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/turkiye-genclik-degisimi-projesi-28-2/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Common Ground: Linking Ecology and Peacebuilding",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/common-ground-linking-ecology-and-peacebuilding.15381/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Democracy Reloading Webinars 2026: Developing youth participation in municipal decisions",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/democracy-reloading-webinars-2026-developing-youth-participation-in-municipal-decisions.14419/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Safeguarding in ESC organisations in practice",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/safeguarding-in-esc-organisations-in-practice.15356/",
         "platform": "SALTO-YOUTH"
     }
 ]
