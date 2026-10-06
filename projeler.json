@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Common Ground: Linking Ecology and Peacebuilding",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/common-ground-linking-ecology-and-peacebuilding.15381/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "A Drop Brings Change contact-making seminar",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/a-drop-brings-change-contact-making-seminar.15380/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Final conference ''Innovators lab: GenZs Game-Based Peacebuilding\"",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/final-conference-innovators-lab-genzs-game-based-peacebuilding.15360/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Youth Workers as Mental Health Supporters",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/youth-workers-as-mental-health-supporters.15216/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "İzmir KA2 Projesi Hareketliliği",
         "link": "https://www.eplusturkiye.org/proje/izmir-ka2-projesi-hareketliligi/",
         "platform": "Erasmus+ Türkiye"
@@ -127,26 +147,6 @@
     {
         "baslik": "Safeguarding in ESC organisations in practice",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/safeguarding-in-esc-organisations-in-practice.15356/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Erasmus+ Make art not walls",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/erasmus-make-art-not-walls.15331/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Inclusion & Diversity in Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/inclusion-diversity-in-youth-work.15245/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Study Visit to Estonia",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/study-visit-to-estonia.15273/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "MindBoost Academy: Mental Health & Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mindboost-academy-mental-health-youth-work.15180/",
         "platform": "SALTO-YOUTH"
     }
 ]
