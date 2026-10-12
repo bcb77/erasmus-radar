@@ -1,5 +1,30 @@
 [
     {
+        "baslik": "Green Future: Developing young people’s green competences based on the GreenComp Framework",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/green-future-developing-young-people-s-green-competences-based-on-the-greencomp-framework.15387/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "International Conference \"European Network of Local Youth Councils  (ENLYC) in the Digital Age\"",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/international-conference-european-network-of-local-youth-councils-enlyc-in-the-digital-age.15388/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Contact Seminar",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/contact-seminar.15386/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "REEL: Reflection, Expression, Empathy and Learning through Film",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/reel-reflection-expression-empathy-and-learning-through-film.15396/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Pegasus Havayolları: Tecrübeli ve Tecrübesiz Kabin Memuru Alıyor",
+        "link": "https://www.erasmusgram.com/pegasus-havayollari-tecrubeli-ve-tecrubesiz-kabin-memuru-aliyor/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "FACILITATE VISUALLY",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/facilitate-visually.15376/",
         "platform": "SALTO-YOUTH"
@@ -123,30 +148,5 @@
         "baslik": "Azerbaycan , Bakü : Kısa Dönem Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/azerbaycan-baku-kisa-donem-erasmus-projesi/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Gürcistan , Bakuriani: 7 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/gurcistan-bakuriani-7-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "EAC EMPOWER Impact: Safe Space -  Kind & Constructive Feedback",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eac-empower-impact-safe-space-kind-constructive-feedback.15400/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Intersect in Diversity: An Open Dialogue Initiative",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/intersect-in-diversity-an-open-dialogue-initiative.15339/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "VERTICAL VOICES – Digital Storytelling Tools for Youth Workers",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/vertical-voices-digital-storytelling-tools-for-youth-workers.15357/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "STORY2SPEAK – Creative Autobiography for Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/story2speak-creative-autobiography-for-youth-work.15358/",
-        "platform": "SALTO-YOUTH"
     }
 ]
