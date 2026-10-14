@@ -1,5 +1,30 @@
 [
     {
+        "baslik": "The Edge Within",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-within.15399/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Mastering Digital Tools in Non- Formal Education",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mastering-digital-tools-in-non-formal-education.15402/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Bosna Hersek Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/bosna-hersek-egitim-kursu-projesi-2/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Fransa : 8 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/fransa-8-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "İŞKUR : Gençlik Programı Başladı",
+        "link": "https://www.erasmusgram.com/iskur-genclik-programi-basladi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Training Course Cohesive Youth Work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/training-course-cohesive-youth-work.15363/",
         "platform": "SALTO-YOUTH"
@@ -122,31 +147,6 @@
     {
         "baslik": "Europe Unlocked – Erasmus+ Training Course on EU Citizenship & Democratic Participation",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/europe-unlocked-erasmus-training-course-on-eu-citizenship-democratic-participation.15411/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Europe Goes Local: Using Erasmus+ KA153 Mobility Projects to Strengthen Local Youth Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/europe-goes-local-using-erasmus-ka153-mobility-projects-to-strengthen-local-youth-work.15288/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "From Idea to Impact - An Erasmus+ Youth and European Solidarity Corps Project Lab for Deaf and hard-of-hearing people and organisations",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/from-idea-to-impact-an-erasmus-youth-and-european-solidarity-corps-project-lab-for-deaf-and-hard-of-hearing-people-and-organisations.15238/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "PDA: Rural Youth Work Lab in the heart of Rural Sardinia",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/pda-rural-youth-work-lab-in-the-heart-of-rural-sardinia.15374/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Arts of Prevention: Partnership-building activity",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/arts-of-prevention-partnership-building-activity.15384/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "BiCycle Project - Final Visit to Brussels",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/bicycle-project-final-visit-to-brussels.15393/",
         "platform": "SALTO-YOUTH"
     }
 ]
