@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Digital Content & Pedagogical Practices",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digital-content-pedagogical-practices.15401/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "DIGIpreneur - Digital Entrepreneurship",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digipreneur-digital-entrepreneurship.15456/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "\"European Network for Mental Health of Youth\" Partnership Building Activity",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/european-network-for-mental-health-of-youth-partnership-building-activity.15365/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Webinar - Presentation of the Consent Toolkit",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/webinar-presentation-of-the-consent-toolkit.15418/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Dive in. Foundations of conflict transformation at the interpersonal level",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/dive-in-foundations-of-conflict-transformation-at-the-interpersonal-level.15405/",
         "platform": "SALTO-YOUTH"
@@ -127,26 +147,6 @@
     {
         "baslik": "Training for Mentors 2",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/training-for-mentors-2.15320/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Youth Trainers Academy (YTA)",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/youth-trainers-academy-yta.15369/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İtalya Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/italya-egitim-kursu-projesi-44/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "\"Inside Track\" Webinar Series by Youth@Work Partnership \"Unfiltered finance: breaking taboos and building economic autonomy with young people\"",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/inside-track-webinar-series-by-youth-work-partnership-unfiltered-finance-breaking-taboos-and-building-economic-autonomy-with-young-people.15304/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Tools for Adventurous Education",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/tools-for-adventurous-education.15298/",
         "platform": "SALTO-YOUTH"
     }
 ]
