@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Bulgaristan Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/bulgaristan-egitim-kursu-projesi-28/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Romanya Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/romanya-egitim-kursu-projesi-29/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Macaristan Kısa Dönem ESC Projesi",
+        "link": "https://www.eplusturkiye.org/proje/macaristan-kisa-donem-esc-projesi-16/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Advocacy and Lobbying for international youth work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/advocacy-and-lobbying-for-international-youth-work.15394/",
         "platform": "SALTO-YOUTH"
@@ -132,21 +147,6 @@
     {
         "baslik": "REEL: Reflection, Expression, Empathy and Learning through Film",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/reel-reflection-expression-empathy-and-learning-through-film.15396/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Pegasus Havayolları: Tecrübeli ve Tecrübesiz Kabin Memuru Alıyor",
-        "link": "https://www.erasmusgram.com/pegasus-havayollari-tecrubeli-ve-tecrubesiz-kabin-memuru-aliyor/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "FACILITATE VISUALLY",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/facilitate-visually.15376/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "“GreenComp in Action – Sustainability Skills for Youth Work and the Labour Market”",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/greencomp-in-action-sustainability-skills-for-youth-work-and-the-labour-market.15377/",
         "platform": "SALTO-YOUTH"
     }
 ]
