@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İtalya Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/italya-egitim-kursu-projesi-47/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Bulgaristan Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/bulgaristan-egitim-kursu-projesi-28/",
         "platform": "Erasmus+ Türkiye"
@@ -142,11 +147,6 @@
     {
         "baslik": "Contact Seminar",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/contact-seminar.15386/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "REEL: Reflection, Expression, Empathy and Learning through Film",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/reel-reflection-expression-empathy-and-learning-through-film.15396/",
         "platform": "SALTO-YOUTH"
     }
 ]
