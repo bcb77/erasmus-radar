@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İspanya , Malaga : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/ispanya-malaga-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "İtalya Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/italya-egitim-kursu-projesi-47/",
         "platform": "Erasmus+ Türkiye"
@@ -142,11 +147,6 @@
     {
         "baslik": "International Conference \"European Network of Local Youth Councils  (ENLYC) in the Digital Age\"",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/international-conference-european-network-of-local-youth-councils-enlyc-in-the-digital-age.15388/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Contact Seminar",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/contact-seminar.15386/",
         "platform": "SALTO-YOUTH"
     }
 ]
