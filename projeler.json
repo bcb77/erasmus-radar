@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Bosna Hersek : Kısa Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/bosna-hersek-kisa-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "İtalya , Brindisi : 8 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/italya-brindisi-8-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Connected Youth Work: From Non-Formal to Digital",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/connected-youth-work-from-non-formal-to-digital.15430/",
         "platform": "SALTO-YOUTH"
@@ -138,15 +148,5 @@
         "baslik": "The Edge Within",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-within.15399/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Mastering Digital Tools in Non- Formal Education",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mastering-digital-tools-in-non-formal-education.15402/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Bosna Hersek Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bosna-hersek-egitim-kursu-projesi-2/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
