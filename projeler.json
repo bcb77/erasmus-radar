@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Connected Youth Work: From Non-Formal to Digital",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/connected-youth-work-from-non-formal-to-digital.15430/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "United, Inclusive and Youth Oriented - 1 Italian and 1 French spot left",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/united-inclusive-and-youth-oriented-1-italian-and-1-french-spot-left.15370/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Bosna Hersek Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/bosna-hersek-egitim-kursu-projesi-2/",
         "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Fransa : 8 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/fransa-8-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
