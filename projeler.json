@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "My Career = My Future",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/my-career-my-future.15412/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "2nd Winter Youth Work Academy",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/2nd-winter-youth-work-academy.15421/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Introduction training for newcomers to Youth Exchanges - BiTriMulti",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/introduction-training-for-newcomers-to-youth-exchanges-bitrimulti.15372/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Almanya : 8 Gün Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/almanya-8-gun-genclik-degisimi/",
         "platform": "Erasmusgram"
@@ -132,21 +147,6 @@
     {
         "baslik": "Digital Content & Pedagogical Practices",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digital-content-pedagogical-practices.15401/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "DIGIpreneur - Digital Entrepreneurship",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digipreneur-digital-entrepreneurship.15456/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "\"European Network for Mental Health of Youth\" Partnership Building Activity",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/european-network-for-mental-health-of-youth-partnership-building-activity.15365/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Webinar - Presentation of the Consent Toolkit",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/webinar-presentation-of-the-consent-toolkit.15418/",
         "platform": "SALTO-YOUTH"
     }
 ]
