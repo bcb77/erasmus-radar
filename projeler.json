@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "E-motion: a practical guide to Emotional Intelligence in youth work!",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/e-motion-a-practical-guide-to-emotional-intelligence-in-youth-work.15433/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "S.A.F.E. Moves",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/s-a-f-e-moves.15434/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Bosna Hersek : Kısa Dönem Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/bosna-hersek-kisa-donem-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -137,16 +147,6 @@
     {
         "baslik": "Dive in. Foundations of conflict transformation at the interpersonal level",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/dive-in-foundations-of-conflict-transformation-at-the-interpersonal-level.15405/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Youth Craft Mobility in the V4 region",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/youth-craft-mobility-in-the-v4-region.15408/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "The Edge Within",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-edge-within.15399/",
         "platform": "SALTO-YOUTH"
     }
 ]
