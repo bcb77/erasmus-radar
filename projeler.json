@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Avusturya Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/avusturya-genclik-degisimi-projesi-12/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "My Career = My Future",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/my-career-my-future.15412/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "URGENT! LOOKING FOR PARTICIPANTS - Europe Unlocked",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/urgent-looking-for-participants-europe-unlocked.15411/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Digital Content & Pedagogical Practices",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digital-content-pedagogical-practices.15401/",
         "platform": "SALTO-YOUTH"
     }
 ]
