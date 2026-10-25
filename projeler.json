@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İsveç Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/isvec-egitim-kursu-projesi-5/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Create with Makey Makey: Turning Everyday Objects into Interactive Learning",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/create-with-makey-makey-turning-everyday-objects-into-interactive-learning.15330/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Bulgaristan Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/bulgaristan-egitim-kursu-projesi-28/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Romanya Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/romanya-egitim-kursu-projesi-29/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
