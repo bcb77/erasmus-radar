@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Create with Makey Makey: Turning Everyday Objects into Interactive Learning",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/create-with-makey-makey-turning-everyday-objects-into-interactive-learning.15330/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Democracy Lab. Beyond elections: meaningful Participation & Community Building in Youth Work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/democracy-lab-beyond-elections-meaningful-participation-community-building-in-youth-work.15447/",
         "platform": "SALTO-YOUTH"
@@ -142,11 +147,6 @@
     {
         "baslik": "Romanya Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/romanya-egitim-kursu-projesi-29/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Macaristan Kısa Dönem ESC Projesi",
-        "link": "https://www.eplusturkiye.org/proje/macaristan-kisa-donem-esc-projesi-16/",
         "platform": "Erasmus+ Türkiye"
     }
 ]
