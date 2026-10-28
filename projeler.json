@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İspanya Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/ispanya-genclik-degisimi-projesi-18/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Are We Playing with Our Future? Blended training on game-based and participatory methods for climate action with young people (in Spanish)",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/are-we-playing-with-our-future-blended-training-on-game-based-and-participatory-methods-for-climate-action-with-young-people-in-spanish.15465/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "S.A.F.E. Moves",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/s-a-f-e-moves.15434/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Bosna Hersek : Kısa Dönem Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/bosna-hersek-kisa-donem-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
