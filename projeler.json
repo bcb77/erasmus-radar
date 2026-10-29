@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Key of Sustainability",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/key-of-sustainability.15431/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Action for Peace",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/action-for-peace.15413/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "İspanya Gençlik Değişimi Projesi",
         "link": "https://www.eplusturkiye.org/proje/ispanya-genclik-degisimi-projesi-18/",
         "platform": "Erasmus+ Türkiye"
@@ -138,15 +148,5 @@
         "baslik": "Almanya : 8 Gün Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/almanya-8-gun-genclik-degisimi/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "E-motion: a practical guide to Emotional Intelligence in youth work!",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/e-motion-a-practical-guide-to-emotional-intelligence-in-youth-work.15433/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "S.A.F.E. Moves",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/s-a-f-e-moves.15434/",
-        "platform": "SALTO-YOUTH"
     }
 ]
