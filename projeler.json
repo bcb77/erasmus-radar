@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "İspanya , Alicante : 8 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/ispanya-alicante-8-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Permayouth 4.0",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/permayouth-4-0.15480/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "EAC EMPOWER Impact: Professional Equity -   Every Voice Matters",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/eac-empower-impact-professional-equity-every-voice-matters.15469/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İsveç Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/isvec-egitim-kursu-projesi-5/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
