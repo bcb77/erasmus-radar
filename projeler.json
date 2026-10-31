@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Re:Design Youth Work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/re-design-youth-work.15459/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Resilient Roots - Two Module Facilitation Training",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/resilient-roots-two-module-facilitation-training.15471/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Bulgaristan Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-projesi-22/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Yunanistan Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/yunanistan-genclik-degisimi-projesi-9/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "İspanya , Llinars del Valles : 7 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/ispanya-llinars-del-valles-7-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -128,25 +148,5 @@
         "baslik": "Democracy Lab. Beyond elections: meaningful Participation & Community Building in Youth Work",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/democracy-lab-beyond-elections-meaningful-participation-community-building-in-youth-work.15447/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "IN.PACT Final Event: Connecting People, Sharing Practices, Shaping Participation",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/in-pact-final-event-connecting-people-sharing-practices-shaping-participation.15426/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "How to forge learning communities: stories and adventures from a E+ Small Scale projects",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/how-to-forge-learning-communities-stories-and-adventures-from-a-e-small-scale-projects.15438/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Inclusive Youth “Education Through Sport” (Net)Work",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/inclusive-youth-education-through-sport-net-work.15435/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Avusturya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/avusturya-genclik-degisimi-projesi-12/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
