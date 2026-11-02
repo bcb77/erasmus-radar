@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "FLY - FACILITATING LEARNING FOR YOUTH",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/fly-facilitating-learning-for-youth.15436/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Unlocking Learning: neuroeducation in youth work",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/unlocking-learning-neuroeducation-in-youth-work.15410/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "“DigiPath – Navigating Digital Competences”",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/digipath-navigating-digital-competences.15455/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Hope Works: Youth Workers supporting young People's positive outlook on the FUTURE",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/hope-works-youth-workers-supporting-young-people-s-positive-outlook-on-the-future.15442/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Finlandiya’da “belki burada bulursun” uygulaması -16 bekar için ücretsiz tatil",
         "link": "https://www.erasmusgram.com/finlandiyada-belki-burada-bulursun-uygulamasi-16-bekar-icin-ucretsiz-tatil/",
         "platform": "Erasmusgram"
@@ -127,26 +147,6 @@
     {
         "baslik": "Mental health in youth work Training Course",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/mental-health-in-youth-work-training-course.15390/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Gaziantep : 7 Gün Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/gaziantep-7-gun-genclik-degisimi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "NextGen Facilitators",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/nextgen-facilitators.15422/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "DISCOVERING YOU! - Empowering youth with fewer opportunities through DiscoverEU Inclusion projects",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/discovering-you-empowering-youth-with-fewer-opportunities-through-discovereu-inclusion-projects.15424/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Sustainable Project Management",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/sustainable-project-management.15391/",
         "platform": "SALTO-YOUTH"
     }
 ]
