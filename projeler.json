@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Re:Design Youth Work_Extended deadline",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/re-design-youth-work-extended-deadline.15459/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Gürcistan Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/gurcistan-genclik-degisimi-projesi-7/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Yunanistan : Kısa Dönem Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/yunanistan-kisa-donem-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -138,15 +148,5 @@
         "baslik": "Key of Sustainability",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/key-of-sustainability.15431/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Action for Peace",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/action-for-peace.15413/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İspanya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/ispanya-genclik-degisimi-projesi-18/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
