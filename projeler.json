@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Malta Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/malta-egitim-kursu-projesi-5/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "YCAN We Can - Climates leaders in Africa and Europe",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ycan-we-can-climates-leaders-in-africa-and-europe.15519/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Re:Design Youth Work_Extended deadline",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/re-design-youth-work-extended-deadline.15459/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Gürcistan Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/gurcistan-genclik-degisimi-projesi-7/",
-        "platform": "Erasmus+ Türkiye"
     }
 ]
