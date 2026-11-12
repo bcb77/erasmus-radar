@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Almanya , Düsseldorf : 2 Farklı Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/almanya-dusseldorf-2-farkli-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Malta Eğitim Kursu Projesi",
         "link": "https://www.eplusturkiye.org/proje/malta-egitim-kursu-projesi-5/",
         "platform": "Erasmus+ Türkiye"
@@ -142,11 +147,6 @@
     {
         "baslik": "OneWay – Seminar on Youth Inclusion",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/oneway-seminar-on-youth-inclusion.15507/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Re:Design Youth Work_Extended deadline",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/re-design-youth-work-extended-deadline.15459/",
         "platform": "SALTO-YOUTH"
     }
 ]
