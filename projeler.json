@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Mısır , Kahire : 7 Gün Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/misir-kahire-7-gun-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Almanya , Düsseldorf : 2 Farklı Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/almanya-dusseldorf-2-farkli-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -143,10 +148,5 @@
         "baslik": "K.Makedonya , Gostivar : 7 Gün Erasmus+ Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/k-makedonya-gostivar-7-gun-erasmus-genclik-degisimi/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "OneWay – Seminar on Youth Inclusion",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/oneway-seminar-on-youth-inclusion.15507/",
-        "platform": "SALTO-YOUTH"
     }
 ]
