@@ -1,5 +1,20 @@
 [
     {
+        "baslik": "Improving Volunteer Participation in NGOs: Creating Meaningful Engagement Among Young People",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/improving-volunteer-participation-in-ngos-creating-meaningful-engagement-among-young-people.15522/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "MAKING THE RIGHT CAREER CHOICES",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/making-the-right-career-choices.15478/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "Create, Edit, Employ: Video Skills for a Better Future",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/create-edit-employ-video-skills-for-a-better-future.15504/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Mısır , Kahire : 7 Gün Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/misir-kahire-7-gun-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -133,20 +148,5 @@
         "baslik": "Equal Ground Q1: Meaningful Participation — Beyond the Seat at the Table",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/equal-ground-q1-meaningful-participation-beyond-the-seat-at-the-table.15397/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Bulgaristan Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-green-hackers-2026/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Fransa : 9 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/fransa-9-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "K.Makedonya , Gostivar : 7 Gün Erasmus+ Gençlik Değişimi",
-        "link": "https://www.erasmusgram.com/k-makedonya-gostivar-7-gun-erasmus-genclik-degisimi/",
-        "platform": "Erasmusgram"
     }
 ]
