@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Moving connections",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/moving-connections.15510/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "No Youth Worker is an Island",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/no-youth-worker-is-an-island.15516/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "train-the trainer with certification",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/train-the-trainer-with-certification.15533/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
+        "baslik": "The Octopus Project - ensuring a space suitable for neurodiverse people",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/the-octopus-project-ensuring-a-space-suitable-for-neurodiverse-people.15495/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "İspanya ve K.Makedonya’da Kısa Dönem Erasmus+ Projeleri",
         "link": "https://www.erasmusgram.com/ispanya-ve-k-makedonyada-kisa-donem-erasmus-projeleri/",
         "platform": "Erasmusgram"
@@ -128,25 +148,5 @@
         "baslik": "Ready 4 Life?",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/ready-4-life.15467/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "İspanya Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/ispanya-erasmus-egitim-kursu-be-visible/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Bulgaristan Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-genclik-degisimi-projesi-27/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Almanya Gençlik Değişimi Projesi",
-        "link": "https://www.eplusturkiye.org/proje/almanya-genclik-degisimi-projesi-45/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "İtalya , Cervia : 6 Gün Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/italya-cervia-6-gun-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
