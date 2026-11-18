@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Myths and Realities of Learning",
+        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/myths-and-realities-of-learning.15528/",
+        "platform": "SALTO-YOUTH"
+    },
+    {
         "baslik": "Play Your Part: Games, Youth Participation and Social Entrepreneurship",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/play-your-part-games-youth-participation-and-social-entrepreneurship.15500/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Almanya : 8 Gün Gençlik Değişimi",
         "link": "https://www.erasmusgram.com/almanya-8-gun-genclik-degisimi-2/",
         "platform": "Erasmusgram"
-    },
-    {
-        "baslik": "Making International Mobility more inclusive - Skip the Barriers of International Mobility",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/making-international-mobility-more-inclusive-skip-the-barriers-of-international-mobility.15530/",
-        "platform": "SALTO-YOUTH"
     }
 ]
