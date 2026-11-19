@@ -1,5 +1,25 @@
 [
     {
+        "baslik": "Almanya , Dortmund : 10 Gün Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/almanya-dortmund-10-gun-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Almanya , Berlin : 8 Gün Erasmus+ Gençlik Değişimi",
+        "link": "https://www.erasmusgram.com/almanya-berlin-8-gun-erasmus-genclik-degisimi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "İzmir : 3 Gün Erasmus+ Programı",
+        "link": "https://www.erasmusgram.com/izmir-3-gun-erasmus-programi/",
+        "platform": "Erasmusgram"
+    },
+    {
+        "baslik": "Almanya , Aurich : Uzun Dönem Erasmus+ Projesi",
+        "link": "https://www.erasmusgram.com/almanya-aurich-uzun-donem-erasmus-projesi/",
+        "platform": "Erasmusgram"
+    },
+    {
         "baslik": "Portekiz , Barcelos : Kısa Dönem Erasmus+ Projesi",
         "link": "https://www.erasmusgram.com/portekiz-barcelos-kisa-donem-erasmus-projesi/",
         "platform": "Erasmusgram"
@@ -127,26 +147,6 @@
     {
         "baslik": "STAGE — Staging Tools for Awareness, Growth & Expression",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/stage-staging-tools-for-awareness-growth-expression.15417/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Bulgaristan Eğitim Kursu Projesi",
-        "link": "https://www.eplusturkiye.org/proje/bulgaristan-egitim-kursu-scroll-breakers-2026/",
-        "platform": "Erasmus+ Türkiye"
-    },
-    {
-        "baslik": "Off script! Everyone's a facilitator until... the group does something unexpected",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/off-script-everyone-s-a-facilitator-until-the-group-does-something-unexpected.15491/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Improving volunteer participation in NGOs - Creating meaningful engagement among young people",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/improving-volunteer-participation-in-ngos-creating-meaningful-engagement-among-young-people.15538/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Global Solvers Accelerator_GSA_2027",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/global-solvers-accelerator-gsa-2027.15353/",
         "platform": "SALTO-YOUTH"
     }
 ]
