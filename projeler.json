@@ -1,5 +1,15 @@
 [
     {
+        "baslik": "Türkiye Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/erzurum-genclik-degisimi-conscious-green-youth-2026/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
+        "baslik": "Türkiye Gençlik Değişimi Projesi",
+        "link": "https://www.eplusturkiye.org/proje/sakarya-erasmus-genclik-degisimi-2026/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "How can immersive technologies (XR,VR,AR) support meaningful, inclusive and engaging youth work?",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/how-can-immersive-technologies-xr-vr-ar-support-meaningful-inclusive-and-engaging-youth-work.15503/",
         "platform": "SALTO-YOUTH"
@@ -137,16 +147,6 @@
     {
         "baslik": "Myths and Realities of Learning",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/myths-and-realities-of-learning.15528/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Play Your Part: Games, Youth Participation and Social Entrepreneurship",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/play-your-part-games-youth-participation-and-social-entrepreneurship.15500/",
-        "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Tell Stories That Matter: Citizen Journalism for Civil Society",
-        "link": "https://www.salto-youth.net/tools/european-training-calendar/training/tell-stories-that-matter-citizen-journalism-for-civil-society.15515/",
         "platform": "SALTO-YOUTH"
     }
 ]
