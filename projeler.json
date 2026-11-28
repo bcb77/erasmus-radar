@@ -1,5 +1,10 @@
 [
     {
+        "baslik": "Almanya Eğitim Kursu Projesi",
+        "link": "https://www.eplusturkiye.org/proje/almanya-erasmus-egitim-kursu-rift-2026/",
+        "platform": "Erasmus+ Türkiye"
+    },
+    {
         "baslik": "Call for Leaders – DELEPO 4.0 Strategic Leadership & Organisational Capacity Lab (Urnieta, Spain)",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/call-for-leaders-delepo-4-0-strategic-leadership-organisational-capacity-lab-urnieta-spain.15529/",
         "platform": "SALTO-YOUTH"
@@ -143,10 +148,5 @@
         "baslik": "Facts and news: Erasmus+ in rural areas",
         "link": "https://www.salto-youth.net/tools/european-training-calendar/training/facts-and-news-erasmus-in-rural-areas.15484/",
         "platform": "SALTO-YOUTH"
-    },
-    {
-        "baslik": "Fransa , Mulhouse : Kısa Dönem Erasmus+ Projesi",
-        "link": "https://www.erasmusgram.com/fransa-mulhouse-kisa-donem-erasmus-projesi/",
-        "platform": "Erasmusgram"
     }
 ]
